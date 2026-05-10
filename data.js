@@ -302,8 +302,8 @@ const VARIANTS = {
     // Location/XR studios: real-world & location-based projects first
     row1: ['la-2028-olympics', 'wizard-of-oz-sphere', 'welcome-to-oko', 'fallout-vault-33'],
     row2: ['secret-garden', 'japanese-izakaya', 'cyberpunk-seoul', 'sienar-chall-utilipede', 'vintage-telephone', 'espresso-machine'],
-    label1: { en: 'Location & Experience Design · 2026',  ko: '공간 & 체험 디자인 · 2026' },
-    label2: { en: '3D Art',                               ko: '3D 아트' },
+    label1: { en: 'Featured Project Contributions',       ko: '주요 참여 프로젝트' },
+    label2: { en: 'Selected Work · 2026',                 ko: '주요 작업 · 2026' },
   },
   game: {
     // Game studios: game-engine environments & props first
@@ -315,13 +315,28 @@ const VARIANTS = {
 };
 
 /* Returns 'vfx', 'lbe', 'game', or 'default'.
-   Matches against hostname (production: vfx.doyeonkim.com, doyeonkim-lbe.netlify.app, …)
-   or URL path (local/dev: /LBE/, /Game/, /vfx/). */
+   Matches against hostname (production: vfx.doyeonkim.com, doyeonkim-lbe.netlify.app, …),
+   URL path (local/dev: /LBE/, /Game/, /vfx/), or URL hash (#LBE / #game / #vfx).
+   Once detected, the variant is saved in sessionStorage so clicking into a
+   project (which overwrites the hash with the project id) doesn't reset the
+   visitor back to the default variant. */
 function detectVariant() {
   const host = window.location.hostname;
   const path = window.location.pathname.toLowerCase();
-  if (host.includes('vfx')  || path.startsWith('/vfx'))  return 'vfx';
-  if (host.includes('lbe')  || path.startsWith('/lbe'))  return 'lbe';
-  if (host.includes('game') || path.startsWith('/game')) return 'game';
+  const hash = window.location.hash.toLowerCase().replace(/^#/, '');
+
+  let variant = null;
+  if      (host.includes('vfx')  || path.startsWith('/vfx')  || hash === 'vfx')  variant = 'vfx';
+  else if (host.includes('lbe')  || path.startsWith('/lbe')  || hash === 'lbe')  variant = 'lbe';
+  else if (host.includes('game') || path.startsWith('/game') || hash === 'game') variant = 'game';
+
+  if (variant) {
+    try { sessionStorage.setItem('variant', variant); } catch (e) {}
+    return variant;
+  }
+  try {
+    const saved = sessionStorage.getItem('variant');
+    if (saved && VARIANTS[saved]) return saved;
+  } catch (e) {}
   return 'default';
 }
