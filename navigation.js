@@ -4,7 +4,7 @@ function goHome() {
   document.getElementById('view-contact').classList.remove('active');
   document.getElementById('view-home').classList.add('active');
   window.scrollTo({ top: 0, behavior: 'instant' });
-  history.pushState({ view: 'home' }, '', '#');
+  history.pushState({ view: 'home' }, '', '');
 }
 
 function goAbout() {
