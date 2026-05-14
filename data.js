@@ -191,11 +191,11 @@ const PROJECTS_SECONDARY = [
   },
   {
     id: "la-2028-olympics",
-    name: { en: "LA 2028 Olympics Experience Center's Cross-reality Space Design, Magnopus", ko: "LA 2028 올림픽 익스피어리언스 센터 XR 전시관 디자인, Magnopus" },
+    name: { en: "LA 2028 Olympics Experience Center's Cross-reality Space Design, Magnopus", ko: "LA 2028 올림픽 익스피리언스 센터 XR 전시관 디자인, Magnopus" },
     tag: { en: "Cross-Reality, Architecture", ko: "XR 경험, 전시관 디자인" },
     wip: false,
     description: { en: "A digital twin of SoFi Stadium reimagined as the LA28 Olympic aquatic center — built on Magnopus' OKO platform with Gensler as the centerpiece of a winning pitch for the 14,000-square-foot Olympics Experience Center. Cut load times in half and lifted runtime performance ~60% across web, mobile, and VR.", 
-      ko: "400평 규모의 '올림픽 익스피리언스 센터' 구축 사업 수주를 이끈 LA SoFi 스타디움의 디지털 트윈 프로젝트. Magnopus의 XR 플랫폼 'OKO'를 기반으로 Gensler와 협업하여 SoFi 스타디움을 LA28 올림픽 수영장으로 새롭게 구현." },
+      ko: "LA 컨벤션 센터 인근 400평 규모의 ‘올림픽 익스피리언스 센터’ 조성 사업 최종 선정. Magnopus의 cross-reality 플랫폼 ‘OKO’를 활용해 디지털 공간 제작. 올림픽 수영장으로 탈바꿈한 LA SoFi 스타디움을 가상으로 체험할 수 있는 공간을 디자인. Gensler와 협업 통해 LA28 올림픽대회조직위원회로부터 제안안 최종 선정을 이끌어냄." },
     year: "2025",
     software: "Unreal 5 · OKO · Maya · Substance 3D Designer",
     role: { en: "3D Artist — Visual Direction, Performance Test, Team Lead (5 artists)", ko: "3D 아티스트 — 비주얼 디렉션, 성능 테스트, 5인 팀 공동 리드" },
@@ -203,26 +203,28 @@ const PROJECTS_SECONDARY = [
     thumb: "laoly-01.jpg",
     images: [
       { summary: true, text: { en: "Ahead of the 2028 Los Angeles Olympic Games, Magnopus received an RFP from the LA28 Organizing Committee to design an immersive Olympics Experience Center. As a 3D Artist at Magnopus, I developed a digital twin of SoFi Stadium within the OKO cross-reality platform, serving as the centerpiece of the pitch that won the commission.", 
-        ko: "LA28 조직위원회의 몰입형 체험관 구축 입찰에서, 전시관 디자인과 XR 체험용 SoFi 스타디움의 디지털 트윈을 제작을 통해 성공적인 사업 수주에 핵심적으로 기여했습니다." } },
+        ko: "핵심 참여 내용: 5인 팀을 공동 리드하며 Web/AR/VR 크로스 플랫폼에서 구동 가능한 올림픽 경기장 3D 공간 제작 및 디자인 협업을 담당하여 최종 RFP 선정에 기여.Gensler와 협력해 전체 익스피리언스 센터 디자인을 완성하고  LA28 올림픽대회조직위원회로부터 최종 선정." } },
       { video: "LA28_video_FINAL-crop.mp4", src: "LA28_video_FINAL-crop-poster.jpg", caption: "" },
       { src: "LAConventionCenter_Solar.webp", caption: "" },
       { text: { en: "The Olympics Experience Center is a 14,000-square-foot(1,300-square-meter) immersive venue planned near the Los Angeles Convention Center, designed to give visitors a behind-the-scenes look at the upcoming Olympic Games. To secure the project, Magnopus partnered with Gensler to demonstrate how integrating digital entertainment with architectural design can elevate the visitor experience. We anchored our pitch around a virtual replica of SoFi Stadium, building it as a fully navigable digital environment.", 
-        ko: "400평 규모의 LA28 올림픽 몰입형 체험관 사업 수주를 위해 소파이 스타디움(SoFi Stadium) 디지털 트윈을 구축했습니다. 매그노퍼스(Magnopus)와 겐슬러(Gensler)의 협업으로 진행된 이 입찰 프로젝트에서, 저희는 디지털 엔터테인먼트와 건축 디자인을 결합해 완전히 탐색 가능한 가상 공간을 피칭의 핵심 무기로 내세웠습니다." } },
+        ko: "프로젝트 배경: 본 프로젝트는 LA28 올림픽대회조직위원회가 관광 및 후원 증진을 위해 XR 기술 기반의 대규모 체험형 올림픽 익스피리언스 센터를 조성하기 위해 시작됐다. 단순한 전시를 넘어 cross-reality 기반의 인터랙티브 기술을 접목해, LA의 주요 랜드마크와 스타디움을 체험할 수 있는 엔터테인먼트 공간 구축을 목표로 삼았다. 이에 따라 Magnopus와 Disney를 포함한 글로벌 기업 10개 사를 대상으로 RFP가 발송되며 프로젝트가 시작됐다." } },
+        { text: { en: "", 
+        ko: "핵심 역량: Maya, Blender, Unreal 5 등의 3D DCC 툴을 활용하여 10만 명 규모의 LA SoFi 스타디움을 AR/VR 환경에 최적화된 디지털 트윈으로 제작했다. 게임 배경 제작 지식을 기반으로 스타디움 모듈화 및 최적화 공정을 리딩하며, UE5 기반의 최적화된 전시 라이팅과 무드를 구축했다. Cross-reality 플랫폼 운용 역량을 발휘해 Gensler와 실시간으로 협력해 체험관(Hype Room)을 디자인하며, 테마적으로 완성된 공간을 구현했다." } },
       { pair: [
         { src: "InglewoodStadiumDesktop.webp", caption: "" },
         { src: "sofi_fly_over.gif", caption: "" }
       ] },
       { text: { en: "I was responsible for establishing the visual direction and coordinating a team of five artists to build the stadium\u2019s architecture, including the swimming venue, broadcasting area, and surrounding plaza. The environment was heavily optimized to run seamlessly across web, mobile, and VR, allowing the LA28 committee to explore the proposed space from any device. Through rigorous iteration, we balanced performance and atmosphere, cutting load times in half and improving runtime performance by 60%, all while preserving the grand scale of an Olympic venue.", 
-        ko: "웹·모바일·AR/VR 플랫폼 상의 최적화를 통해 로딩 속도를 50% 단축하고 런타임 성능을 60% 향상시켰습니다. 저는 3D 아티스트로서 5인의 아티스트, 개발자 팀을 공동 리드하며 디지털 트윈의 수영장, 중계 구역, 주변 플라자 등 경기장 환경 구축을 총괄했습니다. 끊임없는 최적화 반복 작업을 통해 기기의 제약 없이 올림픽 경기장의 웅장함을 원활하게 경험할 수 있도록 기술과 비주얼의 완벽한 균형을 맞췄습니다." } },
+        ko: "성과 및 협업 경험: 기가바이트(GB) 규모의 스타디움 3D 데이터를 100MB 미만으로 최적화하고, Gensler와의 긴밀한 협력을 통해 전체 체험관 디자인을 완성하여 최종 RFP 선정에 기여했다. 아트 및 개발로 구성된 5인 팀을 공동 리드하며, 모바일 및 AR/VR 환경에서도 원활하게 구동될 수 있도록 기가바이트 단위의 디지털 스타디움을 라이팅 포함 100MB 미만으로 최적화했다. 이를 위해 아트 디렉터와 긴밀히 협업하며 시각적 완성도를 유지하는 방향으로 개발·아트 팀 간 목표를 조율했고, 인터랙션 개발자들이 렉 없이 작업할 수 있는 환경을 구축했다. 또한 외부 협력사인 Gensler와의 미팅에 참여해 디자인 피드백을 수용하고, Unreal 5 BP 지식을 활용해 실제 클라이언트 플랫폼 적용 가능 여부를 빠르게 검증해 각 팀에 공유했다." } },
       { pair: [
         { src: "laoly_06.jpg", caption: "" },
         { src: "laoly_07.jpg", caption: "" }
       ] },
       { text: { en: "Our visual goal was to capture the immense scale and openness of SoFi Stadium converted into an Olympic aquatic center. Given the stadium\u2019s massive interior volume, we developed a comprehensive set design to seamlessly connect the competition area with the spectator experience. Leveraging our team\u2019s firsthand experience visiting the physical venue, we efficiently blocked out the foundational layouts for key areas, including the competition and practice pools, broadcasting zones, camera rails, and referee stations. We also drew inspiration from the Paris Olympic swimming facilities and the Lucas Oil Stadium, which served as an excellent real-world precedent for transforming a large arena into a swimming venue. Because our baseline requirement was to enable full interactivity within the OKO platform, we actively utilized its native VR and AR features to review and iterate our designs in a true spatial context.", 
-        ko: "소파이 스타디움이 올림픽 수영장으로 탈바꿈한 압도적인 스케일과 현장감을 시각적으로 완벽하게 구현했습니다. 팀원들의 현장 답사 데이터와 실제 대형 경기장 변환 사례(파리 올림픽, 루카스 오일 스타디움)를 분석해 현실적이고 효율적인 공간 레이아웃을 설계했습니다. 또한, 당사 플랫폼인 OKO의 AR/VR 기능을 활용해 실제와 같은 공간감 속에서 디자인을 직접 검증하고 완성도를 높였습니다." } },
+        ko: "협업을 통한 문제 해결 사례: 3D 아트와 인터랙션 개발 팀 간의 KPI 충돌을 조율해 합의점을 도출했으며, 성능 최적화를 통해 Meta Quest 3 기준 공간 접속 시간을 20초 이내로 단축하는 등 완성도와 안정성 문제를 해결했다. 5인 규모의 SoFi 스타디움 제작 팀을 공동 리드하며, 3D 아트와 인터랙션 개발 간 충돌을 조율하고 각 개발 파트의 목표치를 합리적으로 조정했다. 웹·모바일 환경에서 반복적인 성능 테스트와 기존 프로젝트 데이터 분석을 바탕으로 리소스 사용률을 최적화하고 인터랙션 안정성을 높였다. 그 결과 체험관의 핵심 콘텐츠인 ‘Hype Room’ 데모를 성공적으로 구현했으며, 프로젝트가 RFP 최종 선정에 기여할 수 있도록 했다." } },
       { src: "laoly_15.png", caption: "" },
       { text: { en: "The demo successfully illustrated how visitors would interact with the future Experience Center, helping Magnopus win the bid over ten competing studios. For our team, the project was an opportunity to realize the full potential of cross-reality technology: collaborative iteration across geographies, simulation prior to construction, and the creation of a digital space that goes beyond previewing a physical venue. We built an interactive Olympic stadium where users can experience the space not just as visitors, but through a variety of engaging roles.", 
-        ko: "결과적으로 이 프로젝트는 10여 개의 경쟁 스튜디오를 제치고 사업을 최종 수주하는 데 결정적인 역할을 했습니다. 단순한 3D 시뮬레이션을 넘어, 사용자가 다양한 역할로 공간과 상호작용할 수 있는 인터랙티브 디지털 환경을 창출함으로써 크로스 리얼리티(XR) 기술의 잠재력을 성공적으로 입증해 냈습니다." } },
+        ko: "핵심 및 성과: High-profile 프로젝트를 성공적으로 수행하며 공동 리더십과 커뮤니케이션 역량 등 미드 레벨 이상의 협업 능력을 입증했으며, Unreal 5 워크플로우 문서화를 통해 후속 프로젝트의 디버깅 시간을 단축하는 등 기술적 기여도 함께 이끌어냈다. 프로젝트를 진행하며 다양한 분야의 전문가들로 구성된 팀의 협업 구조를 세분화하고 팀 내 결속을 강화했다. 또한 영어 환경에서 아트 디렉터와 긴밀히 소통하며, 주도적으로 태스크를 실행하는 등 협업 역량을 입증했다. 이후 Unreal 5 기반 워크플로우 문서를 제작·배포했고, 이를 통해 후속 프로젝트인 Wizard of OZ의 시각적 완성도 향상에 기여했다. 나아가 Magnopus의 cross-reality 기술력과 건축·엔터테인먼트 기술 융합 프로젝트의 가능성을 효과적으로 보여주었다." } },
     ]
   },
   {
@@ -310,8 +312,8 @@ const VARIANTS = {
     // Location/XR studios: real-world & location-based projects first
     row1: ['la-2028-olympics', 'wizard-of-oz-sphere', 'welcome-to-oko', 'fallout-vault-33'],
     row2: ['secret-garden', 'japanese-izakaya', 'cyberpunk-seoul', 'sienar-chall-utilipede', 'vintage-telephone', 'espresso-machine'],
-    label1: { en: 'Featured Project Contributions',       ko: '주요 참여 프로젝트' },
-    label2: { en: 'Selected Work · 2026',                 ko: '주요 작업 · 2026' },
+    label1: { en: 'Featured Project Contributions',       ko: '주요 작업' },
+    label2: { en: 'Selected Work · 2026',                 ko: '주요 참여 프로젝트' },
   },
   game: {
     // Game studios: game-engine environments & props first
