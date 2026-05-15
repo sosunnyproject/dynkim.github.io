@@ -792,8 +792,8 @@ html[lang="en"] .gallery-text p:first-child::first-letter {
   color: var(--accent);
 }
 .about-avatar {
-  width: 512px;
-  height: 512px;
+  width: 256px;
+  height: 256px;
   margin: 0 auto 40px;
   border-radius: 50%;
   overflow: hidden;
