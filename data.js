@@ -324,7 +324,7 @@ const PROJECTS_SECONDARY = [
         ko: "핵심 성과 및 기여: 본 프로젝트를 통해 Unreal 5 기반의 고사양 시네마틱 IP를 웹·AR 기반 게임 경험으로 최적화하는 실무 역량과 아트·개발 간 협업 조율 능력을 입증했으며, 결과적으로 〈The World of Fallout〉 정식 프로젝트 공개와 OKO 플랫폼의 기술력 검증에 기여했다." } }
     ]
   },
-   {
+  {
     id: "gap-cross-reality-retail",
     name: { en: "Gap — Cross-Reality Retail Experience, Magnopus", ko: "Gap — 크로스 리얼리티 리테일 익스피리언스, Magnopus" },
     tag: { en: "Cross-Reality, Retail", ko: "크로스 리얼리티, 리테일" },
