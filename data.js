@@ -384,7 +384,7 @@ const PROJECTS_SECONDARY = [
     software: "Unreal 5 · OKO · Maya · Blender · Substance",
     role: { en: "3D Artist — Environment, Materials, Optimization", ko: "3D 아티스트 — 환경, 머티리얼, 최적화" },
     tags: { en: ["hard-surface modeling", "cross-reality", "fortnite"], ko: ["하드서페이스 모델링", "크로스 리얼리티", "Fortnite"] },
-    thumb: "fortnite-01.png",
+    thumb: "fortnite-01.jpg",
     images: [
       { summary: true, text: { en: "", 
         ko: "핵심 참여 내용: 5인 규모의 OKO 포트나이트 TF팀에 3D 아티스트로 참여하여, 뉴욕 타임스퀘어 기반의 게임 공간 제작 담당 및 실시간 공연 시뮬레이션을 위한 파이프라인 구축에 참여했다. " } },
