@@ -53,6 +53,9 @@ function openProject(id) {
     : '';
   document.getElementById('detail-specs').innerHTML = `
     <div>${ui('specYear')} / <span>${t(p.year)}</span></div>
+    <div>${ui('specClient')} / <span>${t(p.client)}</span></div>
+    <div>${ui('specExternalPartner')} / <span>${t(p.externalPartner)}</span></div>
+    <div>${ui('specStatus')} / <span>${t(p.status)}</span></div>
     <div>${ui('specSoftware')} / <span>${t(p.software)}</span></div>
     <div>${ui('specRole')} / <span>${t(p.role)}</span></div>
     ${tagsRow}

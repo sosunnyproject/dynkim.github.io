@@ -164,6 +164,9 @@ const PROJECTS_SECONDARY = [
     description: { en: "An immersive 16K Wizard of Oz experience for the 366-foot Las Vegas Sphere, built as a digital twin in Magnopus' OKO cross-reality platform alongside Sphere Entertainment, Google, and Warner Bros. Optimized a 6 GB BIM model into a real-time space testable from web, iOS, Android, and VR.", 
       ko: "라스베이거스 스피어에서 상영된 〈The Wizard of Oz〉 프로젝트에 참여, Magnopus의 cross-reality 플랫폼 ‘OKO’를 활용해 영화 테마를 모티브로 디지털 공간 디자인. Web/mobile/Unreal 환경에서 접근 가능한 실시간 시뮬레이션 공간으로 최적화." },
     year: "2025",
+    client: 'Sphere Entertainment',
+    externalPartner: 'Google, Warner Bros.',
+    status: { en: 'Released', ko: '출시됨' },
     software: "Unreal 5 · OKO · Maya · Substance 3D Designer, Substance 3D Painter",
     role: { en: "3D Artist — Spatial Design, BIM Optimization, Digital Twin", ko: "3D 아티스트 — 공간 디자인, BIM 최적화, 디지털 트윈" },
     tags: { en: ["hard-surface modeling", "AR/VR", "game ready"], ko: ["하드서페이스 모델링", "AR/VR", "game ready"] },
@@ -201,6 +204,9 @@ const PROJECTS_SECONDARY = [
     wip: false,
     description: { en: "A digital twin of SoFi Stadium reimagined as the LA28 Olympic aquatic center — built on Magnopus' OKO platform with Gensler as the centerpiece of a winning pitch for the 14,000-square-foot Olympics Experience Center. Cut load times in half and lifted runtime performance ~60% across web, mobile, and VR.", 
       ko: "LA 컨벤션 센터 인근 400평 규모의 ‘올림픽 익스피리언스 센터’ 조성 사업 최종 선정. Magnopus의 cross-reality 플랫폼 ‘OKO’를 활용해 디지털 공간 제작. 올림픽 수영장으로 탈바꿈한 LA SoFi 스타디움을 가상으로 체험할 수 있는 공간을 디자인. Gensler와 협업 통해 LA28 올림픽대회조직위원회로부터 제안안 최종 선정을 이끌어냄." },
+    client: 'LA28 Olympic Games Organizing Committee',
+    externalPartner: 'Gensler',
+    status: { en: 'Awarded Through RFP', ko: '최종 선정' },
     year: "2025",
     software: "Unreal 5 · OKO · Maya · Substance 3D Designer",
     role: { en: "3D Artist — Visual Direction, Performance Test, Team Lead (5 artists)", ko: "3D 아티스트 — 비주얼 디렉션, 성능 테스트, 5인 팀 공동 리드" },
@@ -240,6 +246,9 @@ const PROJECTS_SECONDARY = [
     description: { en: "The tutorial space for Magnopus' OKO cross-reality platform — a futuristic museum that introduces new users to the studio's work. Authored a small library of tiling and trim materials (warm wood, polished marble, brushed metal, emissive planets) and established a Miro-based version-control workflow. Now the front door of OKO for 10+ clients including Deloitte, Gensler, and Amazon Studios.", 
       ko: "Magnopus의 cross-reality 플랫폼 ‘OKO’의 튜토리얼 및 온보딩 공간인 스페이스 뮤지엄 프로젝트. 신규 가입자와 외부 클라이언트에게 Magnopus의 기술과 행보를 스토리텔링하기 위해 제작됐다." },
     year: "2024",
+    client: 'Magnopus',                        // plain string
+    externalPartner: 'Gensler',
+    status: { en: 'Released', ko: '출시됨' }, // or bilingual object
     software: "Unreal 5 · OKO · Substance · Miro",
     role: { en: "3D Artist — Environment, Material Library, Workflow", ko: "3D 아티스트 — 환경, 머티리얼 라이브러리, 워크플로우" },
     tags: { en: ["hard-surface modeling", "futuristic", "AR/VR", "game ready"], ko: ["하드서페이스 모델링", "퓨처리스틱", "AR/VR", "게임 레디"] },
@@ -283,6 +292,8 @@ const PROJECTS_SECONDARY = [
     description: { en: "A high-fidelity Vault 33 sizzle for Amazon Studios' Fallout Season 2 — a slice of the show's signature location, optimized for browser and AR delivery on Magnopus' OKO platform. Tightened source assets from 100+ MB per piece down to runtime weights that ran cleanly on every supported client. The pitch led to the launch of The World of Fallout at fallout-s2.amazonstudios.com.", 
       ko: "Amazon Studios의 〈Fallout〉 시즌 2 홍보를 위한 웹 기반 인터랙티브(게임) 프로젝트. Magnopus의 cross-reality 플랫폼 ‘OKO’에 〈Fallout〉의 ‘Vault 33’ 공간 구축에 참여. 〈Fallout〉의 시그니처 배경을 웹·AR 환경에서 실시간으로 탐험 가능한 고퀄리티 디지털 공간으로 구현했다." },
     year: "2025",
+    client: 'Amazon Studios',                        // plain string
+    status: { en: 'Released', ko: '출시됨' }, // or bilingual object
     software: "Unreal 5 · OKO · Maya · Substance",
     role: { en: "3D Artist — Asset Optimization", ko: "3D 아티스트 — 에셋 최적화" },
     tags: { en: ["hard-surface modeling", "sci-fi", "AR/VR", "game ready"], ko: ["하드서페이스 모델링", "SF", "AR/VR", "게임 레디"] },
