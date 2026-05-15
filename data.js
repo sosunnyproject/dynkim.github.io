@@ -365,7 +365,7 @@ const VARIANTS = {
   },
   lbe: {
     // Location/XR studios: real-world & location-based projects first
-    row1: ['la-2028-olympics', 'wizard-of-oz-sphere', 'welcome-to-oko', 'fallout-vault-33'],
+    row1: ['la-2028-olympics', 'wizard-of-oz-sphere', 'welcome-to-oko', 'fallout-vault-33', 'gap-cross-reality-retail'],
     row2: ['secret-garden', 'japanese-izakaya', 'cyberpunk-seoul', 'sienar-chall-utilipede', 'vintage-telephone', 'espresso-machine'],
     label1: { en: 'Featured Project Contributions',       ko: '주요 작업' },
     label2: { en: 'Selected Work · 2026',                 ko: '주요 참여 프로젝트' },
@@ -373,7 +373,7 @@ const VARIANTS = {
   game: {
     // Game studios: game-engine environments & props first
     row1: ['cyberpunk-seoul', 'sienar-chall-utilipede', 'japanese-izakaya', 'secret-garden', 'vintage-telephone', 'espresso-machine'],
-    row2: ['fallout-vault-33', 'wizard-of-oz-sphere', 'la-2028-olympics', 'welcome-to-oko'],
+    row2: ['fallout-vault-33', 'wizard-of-oz-sphere', 'la-2028-olympics', 'welcome-to-oko', 'gap-cross-reality-retail'],
     label1: { en: 'Game Environment Art · 2026',          ko: '게임 환경 아트 · 2026' },
     label2: { en: 'Selected Projects',                    ko: '다른 작업' },
   },
