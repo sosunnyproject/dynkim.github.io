@@ -329,16 +329,43 @@ const PROJECTS_SECONDARY = [
     name: { en: "Gap — Cross-Reality Retail Experience, Magnopus", ko: "Gap — 크로스 리얼리티 리테일 익스피리언스, Magnopus" },
     tag: { en: "Cross-Reality, Retail", ko: "크로스 리얼리티, 리테일" },
     wip: false,
-    description: { en: "A cross-reality retail environment for Gap, built on Magnopus' OKO platform — a navigable digital flagship store optimized for web, mobile, and AR. Focus on accurate brand materiality, modular store fixtures, and real-time lighting that mirrors Gap's physical retail language.", ko: "Magnopus의 OKO 플랫폼 기반으로 제작한 Gap 크로스 리얼리티 리테일 환경. 웹·모바일·AR에 최적화된 탐색 가능한 디지털 플래그십 스토어. 브랜드 머티리얼 정확도, 모듈러 매장 집기, Gap 오프라인 리테일 언어를 반영한 실시간 라이팅에 집중." },
+    description: { en: "A cross-reality retail environment for Gap, built on Magnopus' OKO platform — a navigable digital flagship store optimized for web, mobile, and AR. Focus on accurate brand materiality, modular store fixtures, and real-time lighting that mirrors Gap's physical retail language.", 
+      ko: "Magnopus의 cross-reality 플랫폼 ‘OKO’를 리테일 분야에 적용하기 위한 기술 데모 프로젝트. 패션 브랜드 Gap을 대상으로 AR 기반의 가상 리테일 샵을 제작해, 의류 및 브랜드 경험을 실시간 cross-reality 환경에서 구현했다." },
     year: "2025",
     client: "Gap",
     software: "Unreal 5 · OKO · Maya · Blender",
     role: { en: "3D Artist — Environment, Materials, Optimization", ko: "3D 아티스트 — 환경, 머티리얼, 최적화" },
     tags: { en: ["hard-surface modeling", "AR/VR", "retail", "game ready"], ko: ["하드서페이스 모델링", "AR/VR", "리테일", "게임 레디"] },
-    thumb: "gap-01.jpg",
+    thumb: "gap-01.png",
     images: [
-      { src: "gap-01.jpg", caption: { en: "Hero render — digital flagship interior", ko: "히어로 렌더 — 디지털 플래그십 내부" } },
-    ]
+      { summary: true, text: { en: "Before Amazon Studios commissioned Magnopus to launch The World of Fallout—an interactive web experience timed to the show's second season—the OKO team built a Vault 33 sizzle to anchor the pitch. As a 3D Artist on the OKO side, I optimized assets pulled from the series and helped stress-test whether the platform could carry Fallout's world at game-grade fidelity, straight into a web browser and on AR.", 
+        ko: "핵심 참여 내용: 제한된 2주 일정과 외부 스튜디오 환경에서도 cross-reality 리테일 데모를 안정적으로 제작하며, 실시간 협업을 통해 위치 기반 콘텐츠 재구축·클라이언트별 렌더링 이슈 해결·디지털 사이니지와 연결을 성공적으로 수행했다. Gap의 경영진(CEO·CFO·CBSO)이 함께 참여했다." } },
+      { src: "gap-01.png", caption: { en: "", ko: "" } },
+      { text: { en: "", 
+        ko: "프로젝트 배경: 본 프로젝트는 Magnopus가 2020 Expo Dubai 부터 자체 개발한 cross-reality 플랫폼 ‘OKO’를 엔터테인먼트 외 산업으로 확장하기 위해 시작됐다. 특히 패션·리테일 산업에서 XR 기반 쇼핑 경험 및 브랜드 체험 공간의 가능성을 검증하는 것을 목표로 삼았으며, 단순한 제품 전시가 아닌 실시간 인터랙티브 리테일 경험 구현에 초점을 맞췄다. 이에 따라 Gap 의류 및 브랜드 공간을 가상 환경에 구현하고, 웹·AR·디지털사이니지 상에서 동일한 사용자 경험을 제공할 수 있는 cross-platform 리테일 데모 제작이 추진됐다." } },
+      { pair: [
+        { src: "gap-02.jpeg", caption: "" },
+        { src: "gap-03.png", caption: "" }
+      ] },
+      { text: { en: "", 
+        ko: "핵심 역량: Maya·Blender·Unreal 5 기반의 3D 콘텐츠 제작 역량과 cross-reality 플랫폼 운용 경험을 바탕으로, 패션 의류와 리테일 공간을 웹·AR·디지털사이니지에 최적화된 디지털 공간으로 구현했다. 특히 웹·AR 플랫폼 간 렌더링 차이를 최소화하기 위한 최적화 기준을 수립하고, 기존 프로젝트 데이터와 워크플로우 문서를 기반으로 렌더링 버그를 빠르게 분석해 해결했다." } },
+      { src: "gap-04.jpg", caption: { en: "", ko: "" } },
+      { text: { en: "", 
+        ko: "성과 및 협업 경험: 2주라는 짧은 기간 안에 cross-reality 기반 리테일 데모를 성공적으로 구축하고, Gap 경영진 대상 프레젠테이션을 안정적으로 완료해 파트너십 구축에 기여했다. 프로젝트 진행 과정에서는 프로덕션 팀·2D/3D 콘텐츠 팀·개발 팀이 동시에 협업하는 구조 속에서, 각 파트 간 기술적 요구사항과 일정 충돌을 조율하며 프로젝트 완성도를 유지했다. 또한 원격으로 QA팀과 협업 및 실시간 피드백 체계를 통해 새로운 스튜디오에서도 AR 정확성과 인터랙션 안정성을 확보했다." } },
+      { pair: [
+        { src: "gap-05.png", caption: "" },
+        { src: "gap-06.png", caption: "" }
+      ] },
+      { text: { en: "", 
+        ko: "협업을 통한 문제 해결 사례: OKO 플랫폼 리팩토링 과정에서 Web·Unreal·AR 환경 간 동일한 3D 에셋이 서로 다르게 렌더링되는 문제를 발견했고, 이로 인해 기존 리테일 샵 에셋을 전면 수정해야 하는 상황이 발생했다." } },
+      { text: { en: "", 
+        ko: "이를 해결하기 위해 기존 cross-reality 프로젝트 마다 축적·업데이트해온 워크플로우 및 최적화 데이터를 기반으로 플랫폼별 렌더링 기준을 재정립했고, 리팩토링 영향을 최소화할 수 있는 새로운 목표치를 빠르게 수립했다. 이를 통해 프로젝트 일정 지연 없이 데모를 안정적으로 완성할 수 있었다." } },
+      { text: { en: "", 
+        ko: "또한 신규 기능으로 도입된 Gaussian Splat 기술 적용 여부를 검토하는 과정에서, 시각적 품질은 우수하지만 성능 최적화 문제가 발생할 가능성을 사전에 분석해 사용 계획을 보류하도록 조율했다. 이를 통해 데모 안정성과 실시간 퍼포먼스를 우선시하는 방향으로 팀 의사결정을 유도했다." } },
+      { src: "gap-07.png", caption: { en: "", ko: "" } },  
+      { text: { en: "", 
+        ko: "핵심 성과 및 기여: 고난도 cross-reality 리테일 프로젝트를 제한된 기간과 외부 환경에서 성공적으로 수행하며, 기술 검증·협업 조율·실시간 문제 해결 역량을 입증했다. 특히 다양한 분야의 전문가들이 참여하는 프로젝트 중심에서 직접 클라이언트 및 경영진과 소통하며, 이를 바탕으로 관련된 팀들과 기술적 의사결정과 프로젝트 방향성을 조율하는 협업 경험을 축적했다. 또한 본 프로젝트는 OKO 플랫폼이 엔터테인먼트뿐 아니라 패션·리테일 산업에서도 활용될 수 있음을 보여준 사례로, Magnopus의 cross-reality 기술 응용 범위와 사업 확장 가능성을 효과적으로 입증했다." } },
+      ]
   },
 ];
 
