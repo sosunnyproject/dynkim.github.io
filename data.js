@@ -98,7 +98,7 @@ const PROJECTS = [
     wip: false,
     description: { en: "A late-night Tokyo izakaya — red leather stools, brass trim, paper lanterns, exposed ductwork. Focus on warm practical lighting, densely-dressed shelves of sake and whisky, and the interplay between industrial ceiling and traditional decor.", 
     ko: "VR 체험용 가상 공간 프로젝트. 한밤의 이자카야 — 빨간 가죽 스툴, 황동 트림, 종이 등롱, 노출 덕트로 구성한 환경. 따뜻한 실용 조명, 사케와 위스키로 빼곡한 선반, 산업적 천장과 전통적 장식의 대비에 집중." },
-    year: "2025",
+    year: "2024",
     software: "Unreal 5 · Blender · Substance",
     role: { en: "Full Environment — Modelling, Materials, Lighting", ko: "환경 전반 — 모델링, 머티리얼, 라이팅" },
     tags: { en: ["hard-surface modeling", "game ready", "VR"], ko: ["하드서페이스 모델링", "game ready", "VR"] },
@@ -122,7 +122,7 @@ const PROJECTS = [
     wip: false,
     description: { en: "A Dalla Corte EVO2 commercial espresso machine, dressed with travel stickers, a sticky note, and years of cafe wear. Modelled and textured as a hero prop for the Japanese Izakaya scene — the red anchor piece behind the bar.", 
     ko: "Dalla Corte EVO2 상업용 에스프레소 머신을 여행 스티커, 포스트잇, 수년간의 카페 사용감으로 드레싱." },
-    year: "2025",
+    year: "2024",
     software: "Blender · Substance · Marmoset",
     role: { en: "Modelling, Materials, Lighting", ko: "모델링, 머티리얼, 라이팅" },
     tags: { en: ["hard-surface modeling", "mechanics", "game ready"], ko: ["하드서페이스 모델링", "메커닉", "game ready"] },
@@ -253,7 +253,7 @@ const PROJECTS_SECONDARY = [
       ko: "Magnopus의 cross-reality 플랫폼 ‘OKO’의 튜토리얼 및 온보딩 공간인 스페이스 뮤지엄 프로젝트. 신규 가입자와 외부 클라이언트에게 Magnopus의 기술과 행보를 스토리텔링하기 위해 제작됐다." },
     year: "2024",
     client: 'Magnopus',                        // plain string
-    externalPartner: 'Gensler',
+    externalPartner: false,
     status: { en: 'Released', ko: '출시됨' }, // or bilingual object
     software: "Unreal 5 · OKO · Substance · Miro",
     role: { en: "3D Artist — Environment, Material Library, Workflow", ko: "3D 아티스트 — 환경, 머티리얼 라이브러리, 워크플로우" },
@@ -299,6 +299,7 @@ const PROJECTS_SECONDARY = [
       ko: "Amazon Studios의 〈Fallout〉 시즌 2 홍보를 위한 웹 기반 인터랙티브(게임) 프로젝트. Magnopus의 cross-reality 플랫폼 ‘OKO’에 〈Fallout〉의 ‘Vault 33’ 공간 구축에 참여. 〈Fallout〉의 시그니처 배경을 웹·AR 환경에서 실시간으로 탐험 가능한 고퀄리티 디지털 공간으로 구현했다." },
     year: "2025",
     client: 'Amazon Studios',                        // plain string
+    externalPartner: false,
     status: { en: 'Released', ko: '출시됨' }, // or bilingual object
     software: "Unreal 5 · OKO · Maya · Substance",
     role: { en: "3D Artist — Asset Optimization", ko: "3D 아티스트 — 에셋 최적화" },
@@ -333,9 +334,11 @@ const PROJECTS_SECONDARY = [
       ko: "Magnopus의 cross-reality 플랫폼 ‘OKO’를 리테일 분야에 적용하기 위한 기술 데모 프로젝트. 패션 브랜드 Gap을 대상으로 AR 기반의 가상 리테일 샵을 제작해, 의류 및 브랜드 경험을 실시간 cross-reality 환경에서 구현했다." },
     year: "2025",
     client: "Gap",
+    externalPartner: 'Fuse Technical Group',
+    status: { en: 'Partnered', ko: '파트너쉽' }, // or bilingual object
     software: "Unreal 5 · OKO · Maya · Blender",
-    role: { en: "3D Artist — Environment, Materials, Optimization", ko: "3D 아티스트 — 환경, 머티리얼, 최적화" },
-    tags: { en: ["hard-surface modeling", "AR/VR", "retail", "game ready"], ko: ["하드서페이스 모델링", "AR/VR", "리테일", "게임 레디"] },
+    role: { en: "3D Artist — AR, Debugging, Assets, Optimization", ko: "3D 아티스트 — AR, 디버깅, 에셋, 최적화" },
+    tags: { en: ["cross-reality", "AR/VR", "retail", "game ready", "gaussian splatting"], ko: ["크로스 리얼리티", "AR/VR", "리테일", "게임 레디", "gaussian splatting"] },
     thumb: "gap-01.png",
     images: [
       { summary: true, text: { en: "Before Amazon Studios commissioned Magnopus to launch The World of Fallout—an interactive web experience timed to the show's second season—the OKO team built a Vault 33 sizzle to anchor the pitch. As a 3D Artist on the OKO side, I optimized assets pulled from the series and helped stress-test whether the platform could carry Fallout's world at game-grade fidelity, straight into a web browser and on AR.", 
@@ -344,12 +347,12 @@ const PROJECTS_SECONDARY = [
       { text: { en: "", 
         ko: "프로젝트 배경: 본 프로젝트는 Magnopus가 2020 Expo Dubai 부터 자체 개발한 cross-reality 플랫폼 ‘OKO’를 엔터테인먼트 외 산업으로 확장하기 위해 시작됐다. 특히 패션·리테일 산업에서 XR 기반 쇼핑 경험 및 브랜드 체험 공간의 가능성을 검증하는 것을 목표로 삼았으며, 단순한 제품 전시가 아닌 실시간 인터랙티브 리테일 경험 구현에 초점을 맞췄다. 이에 따라 Gap 의류 및 브랜드 공간을 가상 환경에 구현하고, 웹·AR·디지털사이니지 상에서 동일한 사용자 경험을 제공할 수 있는 cross-platform 리테일 데모 제작이 추진됐다." } },
       { pair: [
-        { src: "gap-02.jpeg", caption: "" },
+        { src: "gap-02.png", caption: "" },
         { src: "gap-03.png", caption: "" }
       ] },
       { text: { en: "", 
         ko: "핵심 역량: Maya·Blender·Unreal 5 기반의 3D 콘텐츠 제작 역량과 cross-reality 플랫폼 운용 경험을 바탕으로, 패션 의류와 리테일 공간을 웹·AR·디지털사이니지에 최적화된 디지털 공간으로 구현했다. 특히 웹·AR 플랫폼 간 렌더링 차이를 최소화하기 위한 최적화 기준을 수립하고, 기존 프로젝트 데이터와 워크플로우 문서를 기반으로 렌더링 버그를 빠르게 분석해 해결했다." } },
-      { src: "gap-04.jpg", caption: { en: "", ko: "" } },
+      { src: "gap-04.png", caption: { en: "", ko: "" } },
       { text: { en: "", 
         ko: "성과 및 협업 경험: 2주라는 짧은 기간 안에 cross-reality 기반 리테일 데모를 성공적으로 구축하고, Gap 경영진 대상 프레젠테이션을 안정적으로 완료해 파트너십 구축에 기여했다. 프로젝트 진행 과정에서는 프로덕션 팀·2D/3D 콘텐츠 팀·개발 팀이 동시에 협업하는 구조 속에서, 각 파트 간 기술적 요구사항과 일정 충돌을 조율하며 프로젝트 완성도를 유지했다. 또한 원격으로 QA팀과 협업 및 실시간 피드백 체계를 통해 새로운 스튜디오에서도 AR 정확성과 인터랙션 안정성을 확보했다." } },
       { pair: [
@@ -367,6 +370,43 @@ const PROJECTS_SECONDARY = [
         ko: "핵심 성과 및 기여: 고난도 cross-reality 리테일 프로젝트를 제한된 기간과 외부 환경에서 성공적으로 수행하며, 기술 검증·협업 조율·실시간 문제 해결 역량을 입증했다. 특히 다양한 분야의 전문가들이 참여하는 프로젝트 중심에서 직접 클라이언트 및 경영진과 소통하며, 이를 바탕으로 관련된 팀들과 기술적 의사결정과 프로젝트 방향성을 조율하는 협업 경험을 축적했다. 또한 본 프로젝트는 OKO 플랫폼이 엔터테인먼트뿐 아니라 패션·리테일 산업에서도 활용될 수 있음을 보여준 사례로, Magnopus의 cross-reality 기술 응용 범위와 사업 확장 가능성을 효과적으로 입증했다." } },
       ]
   },
+  {
+    id: "fortnite-concert-snoopdogg-icespice",
+    name: { en: "Fortnite Concert — Snoop Dogg & Ice Spice at Time Square, Magnopus", ko: "Fortnite 콘서트 — Snoop Dogg & Ice Spice at Time Square, Magnopus" },
+    tag: { en: "Cross-Reality, Fortnite Concert", ko: "크로스 리얼리티, Fortnite 콘서트" },
+    wip: false,
+    description: { en: "A cross-reality retail environment for Gap, built on Magnopus' OKO platform — a navigable digital flagship store optimized for web, mobile, and AR. Focus on accurate brand materiality, modular store fixtures, and real-time lighting that mirrors Gap's physical retail language.", 
+      ko: "2024 Fortnite Festival Season 6의 Snoop Dogg & Ice Spice 콘서트 프로젝트에 참여하여, Magnopus의 cross-reality 플랫폼 ‘OKO’를 기반으로 게임과 현실 공간을 연결하는 디지털 공연 환경 구축에 기여했다. 뉴욕 Times Square 를 디지털 트윈으로 제작해 실시간 인터랙티브 공연 환경으로 구현했다." },
+    year: "2024",
+    client: "Epic Games",
+    externalPartner: false,
+    status: { en: 'Live Event Completed', ko: 'Live Event 운영 완료' }, // or bilingual object
+    software: "Unreal 5 · OKO · Maya · Blender · Substance",
+    role: { en: "3D Artist — Environment, Materials, Optimization", ko: "3D 아티스트 — 환경, 머티리얼, 최적화" },
+    tags: { en: ["hard-surface modeling", "cross-reality", "fortnite"], ko: ["하드서페이스 모델링", "크로스 리얼리티", "Fortnite"] },
+    thumb: "fortnite-01.png",
+    images: [
+      { summary: true, text: { en: "", 
+        ko: "핵심 참여 내용: 5인 규모의 OKO 포트나이트 TF팀에 3D 아티스트로 참여하여, 뉴욕 타임스퀘어 기반의 게임 공간 제작 담당 및 실시간 공연 시뮬레이션을 위한 파이프라인 구축에 참여했다. " } },
+      { src: "fortnite-01.jpg", caption: { en: "", ko: "" } },
+      { text: { en: "", 
+        ko: "프로젝트 배경: 본 프로젝트는 게임 내부 이벤트와 현실 공간 연출을 동시에 연결해야 하는 프로젝트 특성상, 실제 공연 현장과 가상 공연 환경을 하나의 cross-reality 워크플로우로 통합하는 것이 핵심 과제였다. 특히 Times Square 는 복잡한 행정 구역, 밀집된 군중 환경, 다수의 광고 전광판 소유권 구조 등으로 인해 물리적 리허설이 어려운 장소였으며, 이를 해결하기 위해 시뮬레이션이 가능한 별개의 게임 공간 제작이 진행됐다." } },
+      { src: "fortnite-03.jpg", caption: { en: "", ko: "" } },
+      { text: { en: "", 
+        ko: "핵심 역량: Maya, Blender, Unreal Engine 5을 활용하여, 뉴욕 타임스퀘어를 본딴 공간을 구현했다. 모바일 및 웹 환경에서 군중, 카메라, 그리고 전광판 영상 시뮬레이션을 위해 최적화했다." } },
+      { text: { en: "", 
+        ko: "성과 및 협업 경험: 복잡한 도심-게임 공연 시뮬레이션 공간을 만들어, 전체 프로젝트를 81일이라는 제한된 일정 안에 성공적으로 완수하는데 기여했다. 아트 디렉터 및 콘서트 제작팀과 지속적인 피드백 루프를 유지하며, 실제 공연 이전 단계에서 애니메이션·카메라·군중 흐름 등을 디지털 공간 상에서 사전 검증할 수 있도록 지원했다. 이를 통해 공연 운영 리스크를 줄이고, 실시간 라이브 이벤트 제작 효율성을 향상시켰다." } },
+      { pair: [
+        { src: "fortnite-02.jpg", caption: "" },
+        { src: "fortnite-04.jpg", caption: "" }
+      ] },
+      { text: { en: "", 
+        ko: "협업을 통한 문제 해결 사례: 복잡한 전광판과 군중 밀집 환경으로 인해 발생할 수 있는 리스크를 방지하기 위한 정교한 인터랙티브 공간이 필요했고, 인터랙션 개발자 및 아트팀과 협업해 최적의 시뮬레이션 공간을 구축했다. 공연 연출의 시각적 완성도를 유지하면서도 인터랙션 안정성을 확보해야 했기 때문에, 각 팀의 요구사항을 합리적으로 조정하며 KPI를 조율했다. 이를 통해 안정적으로 구동될 수 있도록 대규모 씬을 완성했다." } },
+      { src: "fortnite-06.jpg", caption: { en: "", ko: "" } },
+      { text: { en: "", 
+        ko: "핵심 및 성과: 본 프로젝트를 통해 군사·로지스틱스 분야의 디지털 트윈 및 실시간 시뮬레이션 기술이 엔터테인먼트 산업에 적용·확장되는 과정을 실무적으로 경험했다. 포트나이트 콘서트의 성공적인 운영에 기여하며, Magnopus가 이후 Daft Punk 관련 프로젝트에서도 후속 협업 기회를 확보하는 데 일조했다. 또한 OKO TF팀은 제한된 일정과 복잡한 게임 공간 환경 속에서도 실시간 콘텐츠 제작 및 최적화 역량을 입증하며, 대규모 cross-reality 엔터테인먼트 프로젝트 수행 경험을 축적했다." } },
+      ]
+  },
 ];
 
 /* Combined lookup so openProject() can resolve any id from either section. */
@@ -379,20 +419,20 @@ const ALL_PROJECTS = [...PROJECTS, ...PROJECTS_SECONDARY];
 const VARIANTS = {
   default: {
     row1: ['secret-garden', 'sienar-chall-utilipede', 'vintage-telephone', 'japanese-izakaya', 'espresso-machine', 'cyberpunk-seoul'],
-    row2: ['wizard-of-oz-sphere', 'la-2028-olympics', 'welcome-to-oko', 'fallout-vault-33', 'gap-cross-reality-retail'],
+    row2: ['wizard-of-oz-sphere', 'la-2028-olympics', 'welcome-to-oko', 'fallout-vault-33', 'fortnite-concert-snoopdogg-icespice', 'gap-cross-reality-retail'],
     label1: { en: 'Selected Work · 2026',              ko: '주요 작업 · 2026' },
     label2: { en: 'Selected Projects',                  ko: '다른 작업' },
   },
   vfx: {
     // VFX studios: 3D environments & modeling-heavy work first
     row1: ['secret-garden', 'japanese-izakaya', 'cyberpunk-seoul', 'sienar-chall-utilipede', 'vintage-telephone', 'espresso-machine'],
-    row2: ['wizard-of-oz-sphere', 'la-2028-olympics', 'welcome-to-oko', 'fallout-vault-33', 'gap-cross-reality-retail'],
+    row2: ['wizard-of-oz-sphere', 'fortnite-concert-snoopdogg-icespice', 'la-2028-olympics', 'welcome-to-oko', 'fallout-vault-33', 'gap-cross-reality-retail'],
     label1: { en: '3D · Environments & Animation · 2026', ko: '3D · 환경 & 애니메이션 · 2026' },
     label2: { en: 'Selected Projects',                    ko: '다른 작업' },
   },
   lbe: {
     // Location/XR studios: real-world & location-based projects first
-    row1: ['la-2028-olympics', 'wizard-of-oz-sphere', 'welcome-to-oko', 'fallout-vault-33', 'gap-cross-reality-retail'],
+    row1: ['la-2028-olympics', 'wizard-of-oz-sphere', 'welcome-to-oko', 'fortnite-concert-snoopdogg-icespice', 'fallout-vault-33', 'gap-cross-reality-retail'],
     row2: ['secret-garden', 'japanese-izakaya', 'cyberpunk-seoul', 'sienar-chall-utilipede', 'vintage-telephone', 'espresso-machine'],
     label1: { en: 'Featured Project Contributions',       ko: '주요 작업' },
     label2: { en: 'Selected Work · 2026',                 ko: '주요 참여 프로젝트' },
@@ -400,7 +440,7 @@ const VARIANTS = {
   game: {
     // Game studios: game-engine environments & props first
     row1: ['cyberpunk-seoul', 'sienar-chall-utilipede', 'japanese-izakaya', 'secret-garden', 'vintage-telephone', 'espresso-machine'],
-    row2: ['fallout-vault-33', 'wizard-of-oz-sphere', 'la-2028-olympics', 'welcome-to-oko', 'gap-cross-reality-retail'],
+    row2: ['fallout-vault-33', 'fortnite-concert-snoopdogg-icespice', 'wizard-of-oz-sphere', 'la-2028-olympics', 'welcome-to-oko', 'gap-cross-reality-retail'],
     label1: { en: 'Game Environment Art · 2026',          ko: '게임 환경 아트 · 2026' },
     label2: { en: 'Selected Projects',                    ko: '다른 작업' },
   },
