@@ -9,7 +9,7 @@
 const UI_STRINGS = {
   en: {
     siteTitle:        'Doyeon Kim <em>—</em> 3D Artist',
-    siteTagline:      '3D Worlds · Props · Work in Progress',
+    siteTagline:      '3D Art · 3D Architecture · Simulation · Immersive Entertainment',
     navAbout:         'About',
     navContact:       'Contact',
     navBackToWork:    'Back to work',
@@ -38,7 +38,7 @@ const UI_STRINGS = {
   },
   ko: {
     siteTitle:        '김도연 <em>—</em> 3D 아티스트',
-    siteTagline:      '3D 월드 · 프롭 · 작업 중',
+    siteTagline:      '3D 콘텐츠 · 공간 디자인 · 시뮬레이션 · 이머시브 엔터테인먼트',
     navAbout:         '소개',
     navContact:       '연락처',
     navBackToWork:    '작업으로 돌아가기',

@@ -93,7 +93,7 @@ const PROJECTS = [
   },
   {
     id: "japanese-izakaya",
-    name: { en: "Japanese Izakaya", ko: "일본식 이자카야" },
+    name: { en: "Japanese Izakaya", ko: "이자카야" },
     tag: { en: "Environment", ko: "환경" },
     wip: false,
     description: { en: "A late-night Tokyo izakaya — red leather stools, brass trim, paper lanterns, exposed ductwork. Focus on warm practical lighting, densely-dressed shelves of sake and whisky, and the interplay between industrial ceiling and traditional decor.", 
@@ -355,10 +355,7 @@ const PROJECTS_SECONDARY = [
       { src: "gap-04.jpg", caption: { en: "", ko: "" } },
       { text: { en: "", 
         ko: "성과 및 협업 경험: 2주라는 짧은 기간 안에 cross-reality 기반 리테일 데모를 성공적으로 구축하고, Gap 경영진 대상 프레젠테이션을 안정적으로 완료해 파트너십 구축에 기여했다. 프로젝트 진행 과정에서는 프로덕션 팀·2D/3D 콘텐츠 팀·개발 팀이 동시에 협업하는 구조 속에서, 각 파트 간 기술적 요구사항과 일정 충돌을 조율하며 프로젝트 완성도를 유지했다. 또한 원격으로 QA팀과 협업 및 실시간 피드백 체계를 통해 새로운 스튜디오에서도 AR 정확성과 인터랙션 안정성을 확보했다." } },
-      { pair: [
-        { src: "gap-05.jpg", caption: "" },
-        { src: "gap-06.jpg", caption: "" }
-      ] },
+      { src: "gap-05.jpg", caption: { en: "", ko: "" } },
       { text: { en: "", 
         ko: "협업을 통한 문제 해결 사례: OKO 플랫폼 리팩토링 과정에서 Web·Unreal·AR 환경 간 동일한 3D 에셋이 서로 다르게 렌더링되는 문제를 발견했고, 이로 인해 기존 리테일 샵 에셋을 전면 수정해야 하는 상황이 발생했다." } },
       { text: { en: "", 
