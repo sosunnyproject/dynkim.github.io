@@ -495,6 +495,14 @@ html[lang="ko"] .resume-cta {
 }
 .project-specs span { color: var(--text); }
 
+/* Korean "head word" emphasis — highlights the leading label of each
+   paragraph in secondary-row project galleries (핵심 참여 내용:, 프로젝트 배경: …)
+   so each contextual section is easy to distinguish. */
+.gallery-text-head {
+  font-weight: 600;
+  color: var(--accent);
+}
+
 /* Vertical gallery (project sub-pages) — ArtStation-style stacked layout */
 .gallery-wrapper {
   position: relative;

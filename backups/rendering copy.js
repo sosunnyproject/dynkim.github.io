@@ -18,11 +18,11 @@ function renderProjectsInto(grid, list) {
       </button>`;
   }).join('');
 }
- 
+
 function sortVariantProjects(projects) {
   return typeof variantSort === 'function' ? variantSort(projects) : projects;
 }
- 
+
 function renderHome() {
   const variant = VARIANTS[detectVariant()];
   const row1 = variant.row1.map(id => ALL_PROJECTS.find(p => p.id === id)).filter(Boolean);
@@ -35,20 +35,14 @@ function renderHome() {
   if (l1) l1.textContent = variant.label1[currentLang] || variant.label1.en;
   if (l2) l2.textContent = variant.label2[currentLang] || variant.label2.en;
 }
- 
+
 /* ================================================
    OPEN / CLOSE PROJECT
    ================================================ */
 function openProject(id) {
   const p = ALL_PROJECTS.find(x => x.id === id);
   if (!p) return;
- 
-  // Projects in the secondary row (the one that contains Wizard of Oz —
-  // i.e. everything in PROJECTS_SECONDARY) get the Korean "head word"
-  // emphasis treatment in their gallery text blocks.
-  const isSecondaryRow = typeof PROJECTS_SECONDARY !== 'undefined'
-    && PROJECTS_SECONDARY.some(x => x.id === id);
- 
+
   document.getElementById('detail-title').textContent = t(p.name);
   document.getElementById('detail-description').textContent = t(p.description);
   // Resolve tags through the i18n helper. Empty arrays / missing field skip the row.
@@ -66,29 +60,14 @@ function openProject(id) {
     <div>${ui('specRole')} / <span>${t(p.role)}</span></div>
     ${tagsRow}
   `;
- 
+
   const gallery = document.getElementById('gallery');
   gallery.innerHTML = p.images.map(item => {
     if (item.text) {
       const resolved = t(item.text);
       const paras = Array.isArray(resolved) ? resolved : [resolved];
       const cls = item.summary ? 'gallery-text summary' : 'gallery-text';
-      // Bold/highlight the leading "head word" of each paragraph
-      // (핵심 참여 내용:, 프로젝트 배경:, 핵심 역량: …) so the distinct
-      // contextual sections are easy to tell apart.
-      // Applies to secondary-row projects in Korean only — English
-      // paragraphs carry no such label, so the Hangul-anchored regex
-      // below simply never matches them. Paragraphs that don't open with
-      // a "head word:" pattern (e.g. continuation paragraphs) are left
-      // untouched.
-      const emphasizeHead = para => {
-        if (!isSecondaryRow || currentLang !== 'ko') return para;
-        return para.replace(
-          /^(\s*[가-힣][가-힣\s]{0,24}[:：])/,
-          '<strong class="gallery-text-head">$1</strong>'
-        );
-      };
-      return `<div class="${cls}">${paras.map(para => `<p>${emphasizeHead(para)}</p>`).join('')}</div>`;
+      return `<div class="${cls}">${paras.map(para => `<p>${para}</p>`).join('')}</div>`;
     }
     if (item.link) {
       const safeUrl = item.link.replace(/"/g, '&quot;');
@@ -127,12 +106,12 @@ function openProject(id) {
     // Single image or video
     return renderMediaItem(item);
   }).join('');
- 
+
   // Switch views
   document.getElementById('view-home').classList.remove('active');
   document.getElementById('view-project').classList.add('active');
   window.scrollTo({ top: 0, behavior: 'instant' });
- 
+
   // URL hash for shareable links & back-button support
   history.pushState({ view: 'project', id }, '', `#${id}`);
 }
