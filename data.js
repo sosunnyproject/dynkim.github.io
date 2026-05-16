@@ -168,44 +168,44 @@ const PROJECTS_SECONDARY = [
     tag: { en: "Cross-Reality, Environment", ko: "크로스 리얼리티, 환경" },
     wip: false,
     description: { en: "An immersive 16K Wizard of Oz experience for the 366-foot Las Vegas Sphere, built as a digital twin in Magnopus' OKO cross-reality platform alongside Sphere Entertainment, Google, and Warner Bros. Optimized a 6 GB BIM model into a real-time space testable from web, iOS, Android, and VR.", 
-      ko: "라스베이거스 스피어에서 상영된 〈The Wizard of Oz〉 프로젝트에 참여, Magnopus의 cross-reality 플랫폼 ‘OKO’를 활용해 영화 테마를 모티브로 디지털 공간 디자인. Web/mobile/Unreal 환경에서 접근 가능한 실시간 시뮬레이션 공간으로 최적화." },
+      ko: "라스베이거스 스피어에서 상영된 〈The Wizard of Oz〉 프로젝트에 참여. 영화의 캔자스 배경과 에메랄드시티를 모티브로 스피어를 인터랙션 가능한 디지털 공간으로 재탄생시킴." },
     year: "2025",
     client: 'Sphere Entertainment',
     externalPartner: 'Google, Warner Bros.',
     status: { en: 'Released', ko: '출시됨' },
     software: "Unreal 5 · OKO · Maya · Substance 3D Designer, Substance 3D Painter",
-    role: { en: "3D Artist — Spatial Design, BIM Optimization, Digital Twin", ko: "3D 아티스트 — 공간 디자인, BIM 최적화, 디지털 트윈" },
+    role: { en: "3D Artist — Spatial Design, BIM Optimization, Digital Twin", ko: "3D 아티스트 — 공간 디자인, BIM 데이터 최적화, 디지털 트윈" },
     tags: { en: ["hard-surface modeling", "AR/VR", "game ready"], ko: ["하드서페이스 모델링", "AR/VR", "game ready"] },
     thumb: "spwz-01.jpg",
     images: [
       { summary: true, text: { en: "In a groundbreaking collaboration with Sphere Entertainment, Google, and Warner Bros., Magnopus successfully delivered an immersive Wizard of Oz experience for the 16K-resolution Las Vegas Sphere. As a key 3D artist on the project, I optimized a massive physical venue model into an accessible digital twin using the proprietary OKO cross-reality platform.", 
-        ko: "핵심 참여 내용: 3D 아티스트로서 약 6GB 규모의 Sphere BIM 데이터를 cross-reality 환경에 맞춰 최적화하고, Web/mobile/Unreal 기반에서 실시간 테스트 가능한 디지털 트윈 제작을 담당. 아트와 개발팀 간 협업을 조율하고 스피어의 실제와 디지털 공간 디자인과 구현에 기여." } },
+        ko: "핵심 참여 내용: 3D 아티스트로서 약 기가바이트 단위의 Sphere BIM 데이터를 기반으로 인터랙션 가능한 디지털 공간을 디자인 및 제작을 담당. 스피어 엔터테인먼트의 공연팀과 협업하며 현장 실물 디자인에도 기여." } },
       { src: "spwz-04.webp", caption: "" },
       { text: { en: "In August 2025, Sphere Entertainment presented an immersive version of the classic film The Wizard of Oz at the 366-foot-tall, 16K-resolution grand-size Sphere. In collaboration with Google, Warner Bros., and Magnopus, the world-leading entertainment venue brought the 1939 film into the present, expanding the frames of the original movie to completely enclose the audience in a marvelous, interactive experience of its magical world.", 
-        ko: "프로젝트 배경: 〈The Wizard of Oz〉의 현장 공연과 공간 디자인을 위해 스피어의 디지털 트윈 제작을 추진했다. Sphere Entertainment, Google, Warner Bros., Magnopus는 Sphere에서 〈The Wizard of Oz〉를 immersive entertainment 경험으로 재구성했으며, Magnopus는 자체 플랫폼 OKO를 활용해 Sphere의 디지털 트윈 환경을 구축하고, 실제 공연 이전 단계에서 시뮬레이션·리허설·비주얼 테스트를 수행할 수 있는 제작 파이프라인을 마련했다." } },
+        ko: "프로젝트 배경: Sphere Entertainment, Google, Warner Bros., Magnopus는 Sphere에서 〈The Wizard of Oz〉를 immersive entertainment 경험으로 재구성하며, 공연의 시뮬레이션·리허설·비주얼 테스트를 수행할 수 있는 디지털 공간 제작을 추진했다." } },
         { src: "spwz-02.jpg", caption: "" },
         { src: "spwz-03.jpg", caption: "" },
       { text: { en: "The Wizard of Oz at Sphere was realized through a joint effort between Sphere Entertainment, Magnopus, Warner Bros., and Google. As a 3D artist brought onto the project at Magnopus, I supported the team in making our artists\u2019 imagination and creativity tangible. Magnopus\u2019 proprietary cross-reality platform, OKO, played a crucial role in making this possible. Serving as our main tool, OKO allowed our team to craft a digital-twin simulated space of the Las Vegas Sphere, where all work was pre-rendered, tested, examined, and rehearsed before being put on the physical stage.", 
-        ko: "핵심 역량: Maya, Blender, Unreal Engine 기반 워크플로우를 활용해 Sphere의 대규모 BIM 데이터를 실시간 cross-reality 환경에 최적화하고, OKO 기반 디지털 트윈 구축 및 〈The Wizard of Oz〉의 테마 라이팅·공간 비주얼 디자인 구현을 수행했다. 또한 아트 디렉터와 협업해 스피어 로비 공연에 활용될 〈The Wizard of Oz〉의 오즈 왕좌 디자인 작업에 참여했다." } },
+        ko: "핵심 역량: Sphere의 대규모 BIM 데이터를 바탕으로 실시간 cross-reality 환경에 최적화된 디지털 트윈을 구축했다. 또한 아트 디렉터와 협업해 공연에 등장하는 오즈의 왕좌 디자인 작업에 참여했다." } },
       { src: "spwz-05.png", caption: "" },
       { text: 
         { en: "We began with the fundamental step of digital construction: examining the BIM model of the Sphere, which was incredibly heavy at around 6 GB. Even after cropping the sections we needed for real-time simulation, half the size remained\u2014still far too heavy for cross-reality workflows. This required a dedicated team effort to reduce the size and optimize the environment, making it accessible across all client devices\u2014such as web, iOS, and Android\u2014while establishing the theme of the Wizard of Oz show in the digital space. This optimization opened up vast potential for testing and sharing among studio teams, on-site teams, and clients.", 
-          ko: "성과 및 협업 경험: 6GB 규모의 Sphere 건축 데이터를 WebGL 기반 cross-reality 환경에 최적화해 실시간 원격 협업·시뮬레이션 환경을 구축하고, 다양한 디바이스에서 접근 가능한 cross-platform 제작 파이프라인 구현에 기여했다. 이를 통해, 스튜디오·현장·클라이언트 간의 실시간 협업을 가능케 하고, 실제 공연 이전 단계에서 다양한 연출과 특수효과 테스트가 가능한 제작 환경을 마련했다." } ,},
+          ko: "성과 및 협업 경험: 완성된 디지털 스피어 배경을 활용해 스피어 측과 실시간 원격 협업·시뮬레이션을 테스트했다. 이를 통해, 스튜디오·현장·클라이언트 간의 소통을 효율화하고, 보다 나은 사이니지 영상과 공연 특수효과 품질을 확보했다." } ,},
       { video: "spwz-video-01.mp4", src: "sspwz-video-01-poster.jpg", caption: "" },
       { video: "spwz-video-02.mp4", src: "sspwz-video-02-poster.jpg", caption: "" },
       { text:
         { en: "After optimizing the Sphere\u2019s interior, we were left with its integral framework, allowing us to dive into the artistic tasks alongside other artists from Magnopus and Sphere Entertainment. We anchored the experience around two distinct visual moments from the movie: the prevailing sepia tones representing Kansas at the beginning, and the vibrant emerald tones of the Emerald City later on. Through numerous iterations, the optimized space gained color and was prepared for additional visual, architectural, and even pyrotechnic tests.", 
-          ko: "협업을 통한 문제 해결 사례: 대용량 BIM 데이터로 인한 병목 문제를 해결하기 위해 데이터 구조 재정비와 리소스 최적화를 주도하며, 다양한 팀이 실시간으로 협업 가능한 안정적인 cross-reality 제작 환경을 구축했다. 팀 차원의 최적화를 주도해 실시간 협업 환경을 구축했으며, 다양한 팀이 동시에 디지털 공간 테스트를 진행할 수 있도록 지원해 실제 공연과 디지털 환경 간 품질 격차를 최소화했다." } ,},
+          ko: "협업을 통한 문제 해결 사례: 이전 프로젝트에서 대용량 BIM 데이터를 다뤘던 경험을 바탕으로 현실적인 타임라인과 작업 기준을 제시했으며, 프로덕션·공연·설치 등 다양한 팀과 실시간 협업을 진행해 병목 현상을 최소화했다. 이를 통해 〈The Wizard of Oz〉 프로젝트 참여 팀들은 디지털 스피어 공간에서 안정적으로 테스트를 수행할 수 있었고, 각 협력사가 공연장과 떨어진 환경에서도 실제 공연에 준하는 시뮬레이션을 통해 최종 콘텐츠의 품질을 검증할 수 있었다." } ,},
       { video: "spwz_testvid_01.mp4", src: "spwz_testvid_01-poster.jpg", caption: "", narrow: true },
       { text: [
         { en: "Building a digital-twin space of the Sphere in a cross-reality platform eliminated the distance between the actual venue, the studio, and all involved teams, regardless of their physical location. This was made possible entirely by the platform\u2019s real-time interoperability, which allowed simulations to be conducted and shared with anyone, whether they were using a PC, Mac, mobile phone, or VR headset. To fully harness this magical technology, the 3D art team was essential in logically and artistically optimizing the data to minimize potential bottlenecks while connecting teams. Beyond technical optimization, we meticulously conveyed the design, feel, and mood of The Wizard of Oz, ensuring its original theme blended seamlessly into the digital space, and ultimately, the physical venue. The Wizard of Oz at Sphere was a mind-boggling project in terms of both technology and art, and at this intersection, Magnopus\u2019 solutions team and 3D artists pioneered one of the most advanced methods in creating an immersive experience.", 
-          ko: "핵심 및 성과: 세계 최대 규모의 immersive entertainment 프로젝트에 참여해 cross-reality 기반 디지털 공간 디자인, 실시간 협업 워크플로우 구축, 그리고 Web/mobile/Unreal 환경 엔터테인먼트 프로젝트 실행 역량을 입증했다. 아트와 기술의 균형을 고려한 공간 디자인 작업을 통해 몰입형 경험의 완성도를 높이며, Magnopus의 cross-reality 기술력과 immersive entertainment 제작 파이프라인의 가능성을 효과적으로 보여주었다." }
+          ko: "핵심 및 성과: 세계 최대 규모의 immersive entertainment 프로젝트에 참여해 cross-reality 기반 디지털 공간 디자인, 실시간 협업 워크플로우 구축, 그리고 웹/모바일/Unreal 클라이언트를 연결한 기술의 활용 역량을 입증했다. 또한 아트와 기술의 균형을 고려한 공간 디자인을 통해 공연의 몰입형 경험의 완성도를 높였다." }
       ] },
     ]
   },
   {
     id: "la-2028-olympics",
-    name: { en: "LA 2028 Olympics Experience Center's Cross-reality Space Design, Magnopus", ko: "LA 2028 올림픽 익스피리언스 센터 XR 전시관 디자인, Magnopus" },
+    name: { en: "LA28 Olympics Experience Center's Cross-reality Space Design, Magnopus", ko: "LA28 올림픽 익스피리언스 센터 몰입형 체험관 디자인, Magnopus" },
     tag: { en: "Cross-Reality, Architecture", ko: "XR 경험, 전시관 디자인" },
     wip: false,
     description: { en: "A digital twin of SoFi Stadium reimagined as the LA28 Olympic aquatic center — built on Magnopus' OKO platform with Gensler as the centerpiece of a winning pitch for the 14,000-square-foot Olympics Experience Center. Cut load times in half and lifted runtime performance ~60% across web, mobile, and VR.", 
@@ -214,31 +214,31 @@ const PROJECTS_SECONDARY = [
     externalPartner: 'Gensler',
     status: { en: 'Awarded Through RFP', ko: '최종 선정' },
     year: "2025",
-    software: "Unreal 5 · OKO · Maya · Substance 3D Designer",
-    role: { en: "3D Artist — Visual Direction, Performance Test, Team Lead (5 artists)", ko: "3D 아티스트 — 비주얼 디렉션, 성능 테스트, 5인 팀 공동 리드" },
-    tags: { en: ["hard-surface modeling", "AR/VR", "XR", "game ready"], ko: ["하드서페이스 모델링", "AR/VR", "XR", "game ready"] },
+    software: "Unreal 5 · OKO · Maya · Substance 3D Painter/Designer",
+    role: { en: "3D Artist — Stadium Design, 3D UI Design, Performance Test, Team Lead (5 artists and developers)", ko: "3D 아티스트 — 스타디움 디자인, 3D UI 디자인, 성능 테스트, 5인 팀(아티스트 및 개발자) 공동 리드" },
+    tags: { en: ["environment design", "cross-reality", "game ready"], ko: ["배경 디자인", "크로스-리얼리티", "게임 준비"] },
     thumb: "laoly-01.jpg",
     images: [
       { summary: true, text: { en: "Ahead of the 2028 Los Angeles Olympic Games, Magnopus received an RFP from the LA28 Organizing Committee to design an immersive Olympics Experience Center. As a 3D Artist at Magnopus, I developed a digital twin of SoFi Stadium within the OKO cross-reality platform, serving as the centerpiece of the pitch that won the commission.", 
-        ko: "핵심 참여 내용: 5인 팀을 공동 리드하며 Web/AR/VR 크로스 플랫폼에서 구동 가능한 올림픽 경기장 3D 공간 제작 및 디자인 협업을 담당하여 최종 RFP 선정에 기여.Gensler와 협력해 전체 익스피리언스 센터 디자인을 완성하고  LA28 올림픽대회조직위원회로부터 최종 선정." } },
+        ko: "핵심 참여 내용: 5인 팀을 공동 리드하며 Web/AR/VR 크로스 플랫폼에서 구동 가능한 3D 올림픽 경기장 디자인 및 제작을 담당하여 최종 RFP 선정에 기여. Gensler와 협력해 전체 익스피리언스 센터 디자인 콘셉트를 완성하고 LA28 올림픽대회조직위원회로부터 최종 선정." } },
       { video: "LA28_video_FINAL-crop.mp4", src: "LA28_video_FINAL-crop-poster.jpg", caption: "" },
       { src: "LAConventionCenter_Solar.webp", caption: "" },
       { text: { en: "The Olympics Experience Center is a 14,000-square-foot(1,300-square-meter) immersive venue planned near the Los Angeles Convention Center, designed to give visitors a behind-the-scenes look at the upcoming Olympic Games. To secure the project, Magnopus partnered with Gensler to demonstrate how integrating digital entertainment with architectural design can elevate the visitor experience. We anchored our pitch around a virtual replica of SoFi Stadium, building it as a fully navigable digital environment.", 
-        ko: "프로젝트 배경: 본 프로젝트는 LA28 올림픽대회조직위원회가 관광 및 후원 증진을 위해 XR 기술 기반의 대규모 체험형 올림픽 익스피리언스 센터를 조성하기 위해 시작됐다. 단순한 전시를 넘어 cross-reality 기반의 인터랙티브 기술을 접목해, LA의 주요 랜드마크와 스타디움을 체험할 수 있는 엔터테인먼트 공간 구축을 목표로 삼았다. 이에 따라 Magnopus와 Disney를 포함한 글로벌 기업 10개 사를 대상으로 RFP가 발송되며 프로젝트가 시작됐다." } },
-        { text: { en: "", 
-        ko: "핵심 역량: Maya, Blender, Unreal 5 등의 3D DCC 툴을 활용하여 10만 명 규모의 LA SoFi 스타디움을 AR/VR 환경에 최적화된 디지털 트윈으로 제작했다. 게임 배경 제작 지식을 기반으로 스타디움 모듈화 및 최적화 공정을 리딩하며, UE5 기반의 최적화된 전시 라이팅과 무드를 구축했다. Cross-reality 플랫폼 운용 역량을 발휘해 Gensler와 실시간으로 협력해 체험관(Hype Room)을 디자인하며, 테마적으로 완성된 공간을 구현했다." } },
+        ko: "프로젝트 배경: 본 프로젝트는 LA28 올림픽대회조직위원회가 관광 및 후원 증진을 위해 400평 규모의 체험관을 다운타운 LA에 조성하기 위해 시작됐다. 단순한 홍보를 넘어 cross-reality 기반의 인터랙션을 접목해, LA의 주요 랜드마크와 스타디움을 체험할 수 있는 공간 구축을 목표로 삼았다. 이에 따라 Magnopus와 Disney를 포함한 10개 사를 대상으로 RFP가 발송되며 프로젝트가 시작됐다." } },
+      { text: { en: "", 
+        ko: "핵심 역량: Maya, Blender, CAD, Unreal 5 등의 3D 툴을 활용하여 10만석 규모의 LA SoFi 스타디움을 AR/VR 환경에 최적화된 디지털 트윈으로 제작했다. 게임 월드 제작 지식을 기반으로 스타디움 모듈화 및 최적화 프로세스를 리딩하며, 스타디움을 올림픽 경기장 콘셉트에 맞게 탈바꿈시켰다. 또한, 멀티 접속 및 실시간 수정이 가능한 자사 프로덕션 툴을 이용해 Gensler와 협력해 전체 전시관 콘셉트를 효율적으로 디자인했다." } },
       { pair: [
         { src: "InglewoodStadiumDesktop.webp", caption: "" },
         { src: "sofi_fly_over.gif", caption: "" }
       ] },
       { text: { en: "I was responsible for establishing the visual direction and coordinating a team of five artists to build the stadium\u2019s architecture, including the swimming venue, broadcasting area, and surrounding plaza. The environment was heavily optimized to run seamlessly across web, mobile, and VR, allowing the LA28 committee to explore the proposed space from any device. Through rigorous iteration, we balanced performance and atmosphere, cutting load times in half and improving runtime performance by 60%, all while preserving the grand scale of an Olympic venue.", 
-        ko: "성과 및 협업 경험: 기가바이트(GB) 규모의 스타디움 3D 데이터를 100MB 미만으로 최적화하고, Gensler와의 긴밀한 협력을 통해 전체 체험관 디자인을 완성하여 최종 RFP 선정에 기여했다. 아트 및 개발로 구성된 5인 팀을 공동 리드하며, 모바일 및 AR/VR 환경에서도 원활하게 구동될 수 있도록 기가바이트 단위의 디지털 스타디움을 라이팅 포함 100MB 미만으로 최적화했다. 이를 위해 아트 디렉터와 긴밀히 협업하며 시각적 완성도를 유지하는 방향으로 개발·아트 팀 간 목표를 조율했고, 인터랙션 개발자들이 렉 없이 작업할 수 있는 환경을 구축했다. 또한 외부 협력사인 Gensler와의 미팅에 참여해 디자인 피드백을 수용하고, Unreal 5 BP 지식을 활용해 실제 클라이언트 플랫폼 적용 가능 여부를 빠르게 검증해 각 팀에 공유했다." } },
+        ko: "성과 및 협업 경험: 아트 및 개발로 구성된 5인 팀을 공동 리드하며, 모바일 및 AR/VR 환경에서도 원활하게 구동될 수 있도록 기가바이트 단위의 스타디움 3D 데이터를 100MB 미만으로 최적화했다. 아트 디렉터와 긴밀히 협업하며 시각적 완성도를 유지하는 방향으로 개발·아트 팀 간 목표를 조율했고, 인터랙션 개발자들이 렉 없이 작동할 수 있는 가상 공간을 구축했다. 또한 외부 협력사인 Gensler와의 미팅에 참여해 디자인 피드백을 수용하고, Unreal 5 BP 지식을 활용해 실제 클라이언트 플랫폼 적용 가능 여부를 빠르게 검증해 각 팀에 공유했다." } },
       { pair: [
         { src: "laoly_06.jpg", caption: "" },
         { src: "laoly_07.jpg", caption: "" }
       ] },
       { text: { en: "Our visual goal was to capture the immense scale and openness of SoFi Stadium converted into an Olympic aquatic center. Given the stadium\u2019s massive interior volume, we developed a comprehensive set design to seamlessly connect the competition area with the spectator experience. Leveraging our team\u2019s firsthand experience visiting the physical venue, we efficiently blocked out the foundational layouts for key areas, including the competition and practice pools, broadcasting zones, camera rails, and referee stations. We also drew inspiration from the Paris Olympic swimming facilities and the Lucas Oil Stadium, which served as an excellent real-world precedent for transforming a large arena into a swimming venue. Because our baseline requirement was to enable full interactivity within the OKO platform, we actively utilized its native VR and AR features to review and iterate our designs in a true spatial context.", 
-        ko: "협업을 통한 문제 해결 사례: 3D 아트와 인터랙션 개발 팀 간의 KPI 충돌을 조율해 합의점을 도출했으며, 성능 최적화를 통해 Meta Quest 3 기준 공간 접속 시간을 20초 이내로 단축하는 등 완성도와 안정성 문제를 해결했다. 5인 규모의 SoFi 스타디움 제작 팀을 공동 리드하며, 3D 아트와 인터랙션 개발 간 충돌을 조율하고 각 개발 파트의 목표치를 합리적으로 조정했다. 웹·모바일 환경에서 반복적인 성능 테스트와 기존 프로젝트 데이터 분석을 바탕으로 리소스 사용률을 최적화하고 인터랙션 안정성을 높였다. 그 결과 체험관의 핵심 콘텐츠인 ‘Hype Room’ 데모를 성공적으로 구현했으며, 프로젝트가 RFP 최종 선정에 기여할 수 있도록 했다." } },
+        ko: "협업을 통한 문제 해결 사례: 3D 아트와 인터랙션 개발 팀 간의 KPI 충돌을 조율해 합의점을 도출했으며, 성능 최적화를 통해 VR상에서 인터랙티브 스타디움의 로딩 시간을 20초 이내로 단축하는 등 완성도와 최적화 문제를 해결했다.(Quest 3 기준)" } },
       { src: "laoly_15.png", caption: "" },
       { text: { en: "The demo successfully illustrated how visitors would interact with the future Experience Center, helping Magnopus win the bid over ten competing studios. For our team, the project was an opportunity to realize the full potential of cross-reality technology: collaborative iteration across geographies, simulation prior to construction, and the creation of a digital space that goes beyond previewing a physical venue. We built an interactive Olympic stadium where users can experience the space not just as visitors, but through a variety of engaging roles.", 
         ko: "핵심 및 성과: High-profile 프로젝트를 성공적으로 수행하며 공동 리더십과 커뮤니케이션 역량 등 미드 레벨 이상의 협업 능력을 입증했으며, Unreal 5 워크플로우 문서화를 통해 후속 프로젝트의 디버깅 시간을 단축하는 등 기술적 기여도 함께 이끌어냈다. 프로젝트를 진행하며 다양한 분야의 전문가들로 구성된 팀의 협업 구조를 세분화하고 팀 내 결속을 강화했다. 또한 영어 환경에서 아트 디렉터와 긴밀히 소통하며, 주도적으로 태스크를 실행하는 등 협업 역량을 입증했다. 이후 Unreal 5 기반 워크플로우 문서를 제작·배포했고, 이를 통해 후속 프로젝트인 Wizard of OZ의 시각적 완성도 향상에 기여했다. 나아가 Magnopus의 cross-reality 기술력과 건축·엔터테인먼트 기술 융합 프로젝트의 가능성을 효과적으로 보여주었다." } },
@@ -250,7 +250,7 @@ const PROJECTS_SECONDARY = [
     tag: { en: "Cross-Reality, Environment", ko: "크로스 리얼리티, 환경" },
     wip: false,
     description: { en: "The tutorial space for Magnopus' OKO cross-reality platform — a futuristic museum that introduces new users to the studio's work. Authored a small library of tiling and trim materials (warm wood, polished marble, brushed metal, emissive planets) and established a Miro-based version-control workflow. Now the front door of OKO for 10+ clients including Deloitte, Gensler, and Amazon Studios.", 
-      ko: "Magnopus의 cross-reality 플랫폼 ‘OKO’의 튜토리얼 및 온보딩 공간인 스페이스 뮤지엄 프로젝트. 신규 가입자와 외부 클라이언트에게 Magnopus의 기술과 행보를 스토리텔링하기 위해 제작됐다." },
+      ko: "Magnopus의 cross-reality 플랫폼 ‘OKO’의 튜토리얼 및 온보딩 공간인 스페이스 뮤지엄 제작 프로젝트. 신규 가입자와 외부 클라이언트에게 Magnopus의 기술과 행보를 스토리텔링하기 위해 제작됐다." },
     year: "2024",
     client: 'Magnopus',                        // plain string
     externalPartner: false,
@@ -261,10 +261,10 @@ const PROJECTS_SECONDARY = [
     thumb: "welcomeoko-01.jpg",
     images: [
       { summary: true, text: { en: "Welcome to OKO is the tutorial space for Magnopus' proprietary cross-reality platform, OKO—a futuristic museum designed to introduce new users to the studio's work and storytelling lineage. As a 3D Artist at Magnopus, I translated the concept into a fully realized environment and helped establish the workflow that supported the platform's wider rollout.", 
-        ko: "핵심 참여 내용: 3D 아티스트로서 공간 전체 디자인 및 제작을 담당. Unreal 5을 기반으로 웹·모바일·VR 클라이언트 어디서든 탐험하고 상호작용할 수 있는 cross-platform 공간을 구현. Amazon Studios, Epic Games, Gensler, Deloitte 등 10여 개 이상의 글로벌 조직에 OKO를 소개하는 대표 공간으로 활용 중이다." } },
+        ko: "핵심 참여 내용: 3D 아티스트로서 공간 전체 디자인 및 제작을 담당. Unreal 5을 기반으로 웹/모바일/VR 클라이언트 어디서든 탐험하고 상호작용할 수 있는 cross-platform 공간을 구현. Amazon Studios, Epic Games, Gensler, Deloitte 등 10여 개 이상의 글로벌 조직에 OKO를 소개하는 대표 공간으로 활용 중이다." } },
       { src: "welcomeoko-01.jpg", caption: "" },
       { text: { en: "OKO is Magnopus' real-time, cross-reality platform that lets teams and clients collaborate inside the same digital space across PC, mobile, and VR. The Welcome to OKO map serves as the front door of that platform—a guided walkthrough that introduces visitors to the studio's identity, capabilities, and past projects. The brief called for a futuristic museum that could feel grounded yet imaginative, with enough narrative pacing to carry first-time users through unfamiliar terrain while staying performant on every supported device.", 
-        ko: "프로젝트 배경: Welcome to OKO는 기존 로우폴리의 튜토리얼 공간을 대체해, Unreal 5 기반의 게이미피케이션과 스토리텔링 경험을 통해 Magnopus의 cross-reality 플랫폼 ‘OKO’와 글로벌 프로젝트 역량을 효과적으로 소개하기 위해 제작된 공식 온보딩·브랜딩 공간이다. 단순한 튜토리얼을 넘어 Magnopus의 프로젝트와 기술 방향성을 소개하는 미래 박물관 콘셉트의 가이디드 워크스루 경험을 목표로 삼았다." } },
+        ko: "프로젝트 배경: Welcome to OKO는 기존 로우폴리의 튜토리얼 공간을 대체해, Unreal 5 기반의 게이미피케이션과 스토리텔링 경험을 통해 Magnopus의 cross-reality 플랫폼 ‘OKO’와 프로젝트 역량을 효과적으로 소개하기 위해 제작된 공식 온보딩·브랜딩 공간이다. 단순한 튜토리얼을 넘어 Magnopus의 프로젝트와 기술 방향성을 소개하는 미래 박물관 콘셉트의 가이디드 워크스루 경험을 목표로 삼았다." } },
       { src: "magoko_page_1.jpg", caption: "" },
       { pair: [
         { src: "magoko_page_2.webp", caption: "" },
@@ -347,17 +347,17 @@ const PROJECTS_SECONDARY = [
       { text: { en: "", 
         ko: "프로젝트 배경: 본 프로젝트는 Magnopus가 2020 Expo Dubai 부터 자체 개발한 cross-reality 플랫폼 ‘OKO’를 엔터테인먼트 외 산업으로 확장하기 위해 시작됐다. 특히 패션·리테일 산업에서 XR 기반 쇼핑 경험 및 브랜드 체험 공간의 가능성을 검증하는 것을 목표로 삼았으며, 단순한 제품 전시가 아닌 실시간 인터랙티브 리테일 경험 구현에 초점을 맞췄다. 이에 따라 Gap 의류 및 브랜드 공간을 가상 환경에 구현하고, 웹·AR·디지털사이니지 상에서 동일한 사용자 경험을 제공할 수 있는 cross-platform 리테일 데모 제작이 추진됐다." } },
       { pair: [
-        { src: "gap-02.png", caption: "" },
-        { src: "gap-03.png", caption: "" }
+        { src: "gap-02.jpg", caption: "" },
+        { src: "gap-03.jpg", caption: "" }
       ] },
       { text: { en: "", 
         ko: "핵심 역량: Maya·Blender·Unreal 5 기반의 3D 콘텐츠 제작 역량과 cross-reality 플랫폼 운용 경험을 바탕으로, 패션 의류와 리테일 공간을 웹·AR·디지털사이니지에 최적화된 디지털 공간으로 구현했다. 특히 웹·AR 플랫폼 간 렌더링 차이를 최소화하기 위한 최적화 기준을 수립하고, 기존 프로젝트 데이터와 워크플로우 문서를 기반으로 렌더링 버그를 빠르게 분석해 해결했다." } },
-      { src: "gap-04.png", caption: { en: "", ko: "" } },
+      { src: "gap-04.jpg", caption: { en: "", ko: "" } },
       { text: { en: "", 
         ko: "성과 및 협업 경험: 2주라는 짧은 기간 안에 cross-reality 기반 리테일 데모를 성공적으로 구축하고, Gap 경영진 대상 프레젠테이션을 안정적으로 완료해 파트너십 구축에 기여했다. 프로젝트 진행 과정에서는 프로덕션 팀·2D/3D 콘텐츠 팀·개발 팀이 동시에 협업하는 구조 속에서, 각 파트 간 기술적 요구사항과 일정 충돌을 조율하며 프로젝트 완성도를 유지했다. 또한 원격으로 QA팀과 협업 및 실시간 피드백 체계를 통해 새로운 스튜디오에서도 AR 정확성과 인터랙션 안정성을 확보했다." } },
       { pair: [
-        { src: "gap-05.png", caption: "" },
-        { src: "gap-06.png", caption: "" }
+        { src: "gap-05.jpg", caption: "" },
+        { src: "gap-06.jpg", caption: "" }
       ] },
       { text: { en: "", 
         ko: "협업을 통한 문제 해결 사례: OKO 플랫폼 리팩토링 과정에서 Web·Unreal·AR 환경 간 동일한 3D 에셋이 서로 다르게 렌더링되는 문제를 발견했고, 이로 인해 기존 리테일 샵 에셋을 전면 수정해야 하는 상황이 발생했다." } },
@@ -365,7 +365,7 @@ const PROJECTS_SECONDARY = [
         ko: "이를 해결하기 위해 기존 cross-reality 프로젝트 마다 축적·업데이트해온 워크플로우 및 최적화 데이터를 기반으로 플랫폼별 렌더링 기준을 재정립했고, 리팩토링 영향을 최소화할 수 있는 새로운 목표치를 빠르게 수립했다. 이를 통해 프로젝트 일정 지연 없이 데모를 안정적으로 완성할 수 있었다." } },
       { text: { en: "", 
         ko: "또한 신규 기능으로 도입된 Gaussian Splat 기술 적용 여부를 검토하는 과정에서, 시각적 품질은 우수하지만 성능 최적화 문제가 발생할 가능성을 사전에 분석해 사용 계획을 보류하도록 조율했다. 이를 통해 데모 안정성과 실시간 퍼포먼스를 우선시하는 방향으로 팀 의사결정을 유도했다." } },
-      { src: "gap-07.png", caption: { en: "", ko: "" } },  
+      { src: "gap-07.jpg", caption: { en: "", ko: "" } },  
       { text: { en: "", 
         ko: "핵심 성과 및 기여: 고난도 cross-reality 리테일 프로젝트를 제한된 기간과 외부 환경에서 성공적으로 수행하며, 기술 검증·협업 조율·실시간 문제 해결 역량을 입증했다. 특히 다양한 분야의 전문가들이 참여하는 프로젝트 중심에서 직접 클라이언트 및 경영진과 소통하며, 이를 바탕으로 관련된 팀들과 기술적 의사결정과 프로젝트 방향성을 조율하는 협업 경험을 축적했다. 또한 본 프로젝트는 OKO 플랫폼이 엔터테인먼트뿐 아니라 패션·리테일 산업에서도 활용될 수 있음을 보여준 사례로, Magnopus의 cross-reality 기술 응용 범위와 사업 확장 가능성을 효과적으로 입증했다." } },
       ]
@@ -432,7 +432,7 @@ const VARIANTS = {
   },
   lbe: {
     // Location/XR studios: real-world & location-based projects first
-    row1: ['la-2028-olympics', 'wizard-of-oz-sphere', 'welcome-to-oko', 'fortnite-concert-snoopdogg-icespice', 'fallout-vault-33', 'gap-cross-reality-retail'],
+    row1: ['wizard-of-oz-sphere', 'la-2028-olympics', 'welcome-to-oko', 'fallout-vault-33', 'fortnite-concert-snoopdogg-icespice', 'gap-cross-reality-retail'],
     row2: ['secret-garden', 'japanese-izakaya', 'cyberpunk-seoul', 'sienar-chall-utilipede', 'vintage-telephone', 'espresso-machine'],
     label1: { en: 'Featured Project Contributions',       ko: '주요 작업' },
     label2: { en: 'Selected Work · 2026',                 ko: '주요 참여 프로젝트' },
