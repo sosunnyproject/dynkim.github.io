@@ -18,11 +18,11 @@ function renderProjectsInto(grid, list) {
       </button>`;
   }).join('');
 }
- 
+
 function sortVariantProjects(projects) {
   return typeof variantSort === 'function' ? variantSort(projects) : projects;
 }
- 
+
 function renderHome() {
   const variant = VARIANTS[detectVariant()];
   const row1 = variant.row1.map(id => ALL_PROJECTS.find(p => p.id === id)).filter(Boolean);
@@ -35,20 +35,20 @@ function renderHome() {
   if (l1) l1.textContent = variant.label1[currentLang] || variant.label1.en;
   if (l2) l2.textContent = variant.label2[currentLang] || variant.label2.en;
 }
- 
+
 /* ================================================
    OPEN / CLOSE PROJECT
    ================================================ */
 function openProject(id) {
   const p = ALL_PROJECTS.find(x => x.id === id);
   if (!p) return;
- 
+
   // Projects in the secondary row (the one that contains Wizard of Oz —
   // i.e. everything in PROJECTS_SECONDARY) get the Korean "head word"
   // emphasis treatment in their gallery text blocks.
   const isSecondaryRow = typeof PROJECTS_SECONDARY !== 'undefined'
     && PROJECTS_SECONDARY.some(x => x.id === id);
- 
+
   document.getElementById('detail-title').textContent = t(p.name);
   document.getElementById('detail-description').textContent = t(p.description);
   // Resolve tags through the i18n helper. Empty arrays / missing field skip the row.
@@ -66,7 +66,7 @@ function openProject(id) {
     <div>${ui('specRole')} / <span>${t(p.role)}</span></div>
     ${tagsRow}
   `;
- 
+
   const gallery = document.getElementById('gallery');
   gallery.innerHTML = p.images.map(item => {
     if (item.text) {
@@ -127,12 +127,12 @@ function openProject(id) {
     // Single image or video
     return renderMediaItem(item);
   }).join('');
- 
+
   // Switch views
   document.getElementById('view-home').classList.remove('active');
   document.getElementById('view-project').classList.add('active');
   window.scrollTo({ top: 0, behavior: 'instant' });
- 
+
   // URL hash for shareable links & back-button support
   history.pushState({ view: 'project', id }, '', `#${id}`);
 }
