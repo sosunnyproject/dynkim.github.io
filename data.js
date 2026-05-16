@@ -183,7 +183,7 @@ const PROJECTS_SECONDARY = [
       { src: "spwz-04.webp", caption: "" },
       { text: { en: "In August 2025, Sphere Entertainment presented an immersive version of the classic film The Wizard of Oz at the 366-foot-tall, 16K-resolution grand-size Sphere. In collaboration with Google, Warner Bros., and Magnopus, the world-leading entertainment venue brought the 1939 film into the present, expanding the frames of the original movie to completely enclose the audience in a marvelous, interactive experience of its magical world.", 
         ko: "프로젝트 배경: Sphere Entertainment, Google, Warner Bros., Magnopus는 Sphere에서 〈The Wizard of Oz〉를 immersive entertainment 경험으로 재구성하며, 공연의 시뮬레이션·리허설·비주얼 테스트를 수행할 수 있는 디지털 공간 제작을 추진했다." } },
-      { src: "spwz-06.jpg", caption: "" },
+      { src: "spwz-06.JPG", caption: "" },
       { src: "spwz-03.jpg", caption: "" },
       { text: { en: "The Wizard of Oz at Sphere was realized through a joint effort between Sphere Entertainment, Magnopus, Warner Bros., and Google. As a 3D artist brought onto the project at Magnopus, I supported the team in making our artists\u2019 imagination and creativity tangible. Magnopus\u2019 proprietary cross-reality platform, OKO, played a crucial role in making this possible. Serving as our main tool, OKO allowed our team to craft a digital-twin simulated space of the Las Vegas Sphere, where all work was pre-rendered, tested, examined, and rehearsed before being put on the physical stage.", 
         ko: "핵심 역량: Sphere의 대규모 BIM 데이터를 바탕으로 실시간 cross-reality 환경에 최적화된 디지털 트윈을 구축했다. 또한 아트 디렉터와 협업해 공연에 등장하는 오즈의 왕좌 디자인 작업에 참여했다." } },
