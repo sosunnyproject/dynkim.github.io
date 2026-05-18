@@ -69,28 +69,18 @@ function openProject(id) {
 
   const gallery = document.getElementById('gallery');
   gallery.innerHTML = p.images.map(item => {
-      // ── TEXT / SUMMARY BLOCK ──────────────────────────────────────────────
-    if (item.text != null || item.koBullets) {
-      const cls = item.summary ? 'gallery-text summary' : 'gallery-text';
- 
-      // Korean bullet-list override:
-      // When currentLang is 'ko' and the item carries a koBullets definition,
-      // render a centred title line followed by centred bullet points instead
-      // of the default paragraph layout.
-      if (item.koBullets && currentLang === 'ko') {
-        const { title, items } = item.koBullets;
-        const bulletItems = items
-          .map(i => `<li>${i}</li>`)
-          .join('');
-        return `<div class="${cls} ko-bullet-list">
-          <p class="ko-bullet-title">${title}</p>
-          <ul class="ko-bullet-items">${bulletItems}</ul>
-        </div>`;
-      }
- 
-      // Default text rendering path (English or Korean without koBullets)
+    if (item.text) {
       const resolved = t(item.text);
       const paras = Array.isArray(resolved) ? resolved : [resolved];
+      const cls = item.summary ? 'gallery-text summary' : 'gallery-text';
+      // Bold/highlight the leading "head word" of each paragraph
+      // (핵심 참여 내용:, 프로젝트 배경:, 핵심 역량: …) so the distinct
+      // contextual sections are easy to tell apart.
+      // Applies to secondary-row projects in Korean only — English
+      // paragraphs carry no such label, so the Hangul-anchored regex
+      // below simply never matches them. Paragraphs that don't open with
+      // a "head word:" pattern (e.g. continuation paragraphs) are left
+      // untouched.
       const emphasizeHead = para => {
         if (!isSecondaryRow || currentLang !== 'ko') return para;
         return para.replace(
