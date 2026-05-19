@@ -476,6 +476,7 @@ html[lang="ko"] .resume-cta {
   font-weight: 400;
   line-height: 1.05;
   letter-spacing: -0.015em;
+  word-break: keep-all;
 }
 .project-description {
   margin-top: 16px;
@@ -582,7 +583,7 @@ html[lang="ko"] .resume-cta {
   padding: clamp(16px, 3vw, 40px) clamp(16px, 3vw, 32px);
   color: var(--text);
   font-size: clamp(15px, 1.05vw, 17px);
-  line-height: 1.8;
+  line-height: 1.5;
 }
 .gallery-text p + p { margin-top: 1.25em; }
 /* Drop-cap is a Latin-typography convention — only apply it when reading English.
@@ -621,7 +622,6 @@ html[lang="en"] .gallery-text p:first-child::first-letter {
 .gallery-text.summary::before {
   content: '\201C';
   text-align: left;
-  margin-bottom: 0.32em;
   margin-left: -0.12em;
 }
 .gallery-text.summary::after {
@@ -921,7 +921,7 @@ html[lang="ko"] .gallery-text.summary {
 
 /* Body copy: a touch denser than English to match Hangul rhythm */
 html[lang="ko"] .gallery-text {
-  font-size: clamp(14.5px, 1vw, 16px);
+  font-size: clamp(14.5px, 1.2vw, 16px);
   line-height: 1.85;
   letter-spacing: -0.005em;
 }
@@ -971,7 +971,7 @@ html[lang="ko"] .project-specs span {
 @media (max-width: 640px) {
   .project-grid { grid-template-columns: 1fr; }
   .project-specs { text-align: left; }
-  .gallery-item { height: 60vh; }
+  /* .gallery-item { height: 60vh; } */
 }
 
 /* =========================================
@@ -981,12 +981,6 @@ html[lang="ko"] .project-specs span {
     Suppresses the large quotation-mark pseudo-elements so they don't
     clash with the list layout.
     ========================================= */
- 
-/* Suppress quote marks when the block is a bullet list */
-.gallery-text.summary.ko-bullet-list::before,
-.gallery-text.summary.ko-bullet-list::after {
-  display: none;
-}
  
 /* Container: inherit the summary centring & padding */
 .gallery-text.ko-bullet-list {
@@ -1045,4 +1039,79 @@ html[lang="ko"] .project-specs span {
   color: var(--accent);
   font-weight: 300;
   font-size: 1.2em;
+}
+
+/* =========================================
+    LABELED BLOCK
+    Used when a gallery item's resolved text is an object of the shape
+    { title, items, bulleted }. A centred accent-coloured title sits above
+    a stack of line-broken items. When `bulleted` is true the block keeps
+    the summary frame (oversized quote marks) and renders accent bullets;
+    otherwise the items are plain line items with no markers.
+    ========================================= */
+
+.gallery-text.labeled-block {
+  text-align: center;
+  font-style: normal;
+}
+
+/* Non-summary labeled blocks have no quote-mark frame */
+.gallery-text.labeled-block:not(.summary)::before,
+.gallery-text.labeled-block:not(.summary)::after {
+  display: none;
+}
+
+/* Title — accent colour, slightly larger than the body */
+.labeled-title {
+  font-family: var(--font-display-ko);
+  font-weight: 700;
+  font-size: clamp(18px, 2.0vw, 24px);
+  letter-spacing: -0.02em;
+  color: var(--accent);
+  margin: 0 0 1em;
+  float: none !important;
+}
+.labeled-title::first-letter {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  float: none !important;
+  padding: 0 !important;
+  color: inherit !important;
+}
+
+/* Item list — block centred, items read left-to-right */
+.labeled-items {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 56ch;
+  text-align: left;
+  word-break: keep-all;
+}
+.labeled-items li {
+  padding: 0;
+  margin-bottom: 0.65em;
+  line-height: 1.65;
+  color: var(--text);
+  font-size: clamp(15px, 1.2vw, 20px);
+}
+.labeled-items li::before { content: none; }
+
+/* Bulleted variant — used inside summary blocks; shrink-wraps so the
+    accent bullets stay aligned with the centred frame. */
+.labeled-items.bulleted {
+  display: inline-block;
+}
+.labeled-items.bulleted li {
+  position: relative;
+  padding-left: 1.2em;
+}
+.labeled-items.bulleted li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 300;
+  font-size: 1.4em;
 }

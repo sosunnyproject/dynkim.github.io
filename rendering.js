@@ -70,10 +70,8 @@ function openProject(id) {
     if (item.text != null || item.koBullets) {
       const cls = item.summary ? 'gallery-text summary' : 'gallery-text';
 
-      // Korean bullet-list override:
-      // When currentLang is 'ko' and the item carries a koBullets definition,
-      // render a centred title line followed by centred bullet points instead
-      // of the default paragraph layout.
+      // Legacy: koBullets sibling (kept for any data that hasn't been
+      // migrated to the new { title, items, bulleted } shape under text.ko).
       if (item.koBullets && currentLang === 'ko') {
         const { title, items } = item.koBullets;
         const bulletItems = items
@@ -85,8 +83,22 @@ function openProject(id) {
         </div>`;
       }
 
-      // Default text rendering path (English or Korean without koBullets)
       const resolved = t(item.text);
+
+      // Labeled block: resolved text is an object of shape
+      //   { title, items, bulleted }
+      // Renders a centred accent title above line-broken items. Used to
+      // structure Korean project narratives into 프로젝트 배경 / Task /
+      // Action / Result sections.
+      if (resolved && typeof resolved === 'object' && !Array.isArray(resolved) && Array.isArray(resolved.items)) {
+        const { title, items, bulleted } = resolved;
+        const listCls = bulleted ? 'labeled-items bulleted' : 'labeled-items';
+        const titleHtml = title ? `<p class="labeled-title">${title}</p>` : '';
+        const listHtml = items.map(i => `<li>${i}</li>`).join('');
+        return `<div class="${cls} labeled-block">${titleHtml}<ul class="${listCls}">${listHtml}</ul></div>`;
+      }
+
+      // Default text rendering path (string or array of strings)
       const paras = Array.isArray(resolved) ? resolved : [resolved];
       const emphasizeHead = para => {
         if (!isSecondaryRow || currentLang !== 'ko') return para;

@@ -179,44 +179,76 @@ const PROJECTS_SECONDARY = [
     thumb: "spwz-01.jpg",
     images: [
       {
-        // ─── MODIFIED: Korean layout uses a centred title + bullet list ───
         summary: true,
         text: {
           en: "In a groundbreaking collaboration with Sphere Entertainment, Google, and Warner Bros., Magnopus successfully delivered an immersive Wizard of Oz experience for the 16K-resolution Las Vegas Sphere. As a key 3D artist on the project, I optimized a massive physical venue model into an accessible digital twin using the proprietary OKO cross-reality platform.",
-          ko: "핵심 성과: 약 6GB 규모의 Sphere BIM 데이터를 바탕으로 오즈의 마법사 비주얼을 공간 디자인으로 구현. 캔자스(세피아 톤)·에메랄드시티(에메랄드 톤) 테마의 공연 및 비주얼·특수효과 시뮬레이션. Sphere Entertainment 공연팀과 협업하며 오즈의 왕좌 등 현장 실물 디자인에 기여. 스튜디오·현장·클라이언트 간 실시간 원격 협업 워크플로우 구축으로 소통 효율 및 콘텐츠 품질 향상에 기여"
-        },
-        // koBullets: used instead of text.ko when currentLang === 'ko'
-        koBullets: {
-          title: "핵심 성과",
-          items: [
-            "약 6GB 규모의 Sphere BIM 데이터를 바탕으로 오즈의 마법사 비주얼을 공간 디자인으로 구현.",
-            "캔자스(세피아 톤)·에메랄드시티(에메랄드 톤) 테마의 공연 및 비주얼·특수효과 시뮬레이션.",
-            "Sphere Entertainment 공연팀과 협업하며 오즈의 왕좌 등 현장 실물 디자인에 기여.",
-            "스튜디오·현장·클라이언트 간 실시간 원격 협업 워크플로우 구축으로 소통 효율 및 콘텐츠 품질 향상에 기여."
-          ]
+          ko: {
+            title: "핵심 성과",
+            bulleted: true,
+            items: [
+              "약 6GB 규모의 Sphere BIM 데이터를 바탕으로 오즈의 마법사 비주얼을 공간 디자인으로 구현.",
+              "캔자스(세피아 톤)·에메랄드시티(에메랄드 톤) 테마의 공연 및 비주얼·특수효과 시뮬레이션.",
+              "Sphere Entertainment 공연팀과 협업하며 오즈의 왕좌 등 현장 실물 디자인에 기여.",
+              "스튜디오·현장·클라이언트 간 실시간 원격 협업 워크플로우 구축으로 소통 효율 및 콘텐츠 품질 향상에 기여."
+            ]
+          }
         }
       },
       { src: "spwz-04.webp", caption: "" },
-      { text: { en: "In August 2025, Sphere Entertainment presented an immersive version of the classic film The Wizard of Oz at the 366-foot-tall, 16K-resolution grand-size Sphere. In collaboration with Google, Warner Bros., and Magnopus, the world-leading entertainment venue brought the 1939 film into the present, expanding the frames of the original movie to completely enclose the audience in a marvelous, interactive experience of its magical world.", 
-        ko: "프로젝트 배경: Sphere Entertainment, Google, Warner Bros., Magnopus는 Sphere에서 〈The Wizard of Oz〉를 immersive entertainment 경험으로 재구성하며, 공연의 시뮬레이션·리허설·비주얼 테스트를 수행할 수 있는 디지털 공간 제작을 추진했다." } },
+      { text: { en: "In August 2025, Sphere Entertainment presented an immersive version of the classic film The Wizard of Oz at the 366-foot-tall, 16K-resolution grand-size Sphere. In collaboration with Google, Warner Bros., and Magnopus, the world-leading entertainment venue brought the 1939 film into the present, expanding the frames of the original movie to completely enclose the audience in a marvelous, interactive experience of its magical world.",
+        ko: {
+          title: "프로젝트 배경",
+          items: [
+            "Sphere Entertainment, Google, Warner Bros., Magnopus는 Sphere에서 〈The Wizard of Oz〉를 immersive entertainment 경험으로 재구성하며, 공연의 시뮬레이션·리허설·비주얼 테스트를 수행할 수 있는 디지털 공간 제작을 추진했다."
+          ]
+        } } },
       { src: "spwz-06.JPG", caption: "" },
       { src: "spwz-03.jpg", caption: "" },
       { text: { en: "The Wizard of Oz at Sphere was realized through a joint effort between Sphere Entertainment, Magnopus, Warner Bros., and Google. As a 3D artist brought onto the project at Magnopus, I supported the team in making our artists\u2019 imagination and creativity tangible. Magnopus\u2019 proprietary cross-reality platform, OKO, played a crucial role in making this possible. Serving as our main tool, OKO allowed our team to craft a digital-twin simulated space of the Las Vegas Sphere, where all work was pre-rendered, tested, examined, and rehearsed before being put on the physical stage.", 
-        ko: "Task: Sphere BIM 모델을 분석하고 실시간 협업이 가능한 디지털 공간 구축. 영화의 두 핵심 비주얼 테마(캔자스·에메랄드 시티)를 공간 디자인으로 재해석. Sphere Entertainment 공연팀과 협업해 공연 소품 디자인 및 현장 실물 디자인 지원." } },
+        ko: {
+          title: "Task",
+          items: [
+            "Sphere BIM 모델을 분석하고 실시간 협업이 가능한 디지털 공간 구축.",
+            "영화의 두 핵심 비주얼 테마(캔자스·에메랄드 시티)를 공간 디자인으로 재해석.",
+            "Sphere Entertainment 공연팀과 협업해 공연 소품 디자인 및 현장 실물 디자인 지원."
+          ]
+        } } },
       { src: "spwz-05.png", caption: "" },
       { text: 
         { en: "We began with the fundamental step of digital construction: examining the BIM model of the Sphere, which was incredibly heavy at around 6 GB. Even after cropping the sections we needed for real-time simulation, half the size remained\u2014still far too heavy for cross-reality workflows. This required a dedicated team effort to reduce the size and optimize the environment, making it accessible across all client devices\u2014such as web, iOS, and Android\u2014while establishing the theme of the Wizard of Oz show in the digital space. This optimization opened up vast potential for testing and sharing among studio teams, on-site teams, and clients.", 
-          ko: "Action: Unreal 5·Maya·Blender를 활용해 약 6GB BIM 데이터를 100MB로 경량화하고, cross-platform 개발팀과 협력해 실시간 협업 작업이 가능한 수준으로 최적화. 오즈의 마법사 테마의 LED·사이니지·홀로그램 기반 팬 전용 콘텐츠를 활용해, 세피아와 에메랄드 두 가지 비주얼 테마의 디지털 공간을 구현. Sphere Entertainment 공연팀과 지속적으로 협업하며 오즈의 왕좌 디자인 등 현장 실물 디자인 작업에 참여 및 공연 비주얼 시뮬레이션." } ,},
+          ko: {
+            title: "Action",
+            items: [
+              "Unreal 5·Maya·Blender를 활용해 약 6GB BIM 데이터를 100MB로 경량화하고, cross-platform 개발팀과 협력해 실시간 협업 작업이 가능한 수준으로 최적화.",
+              "오즈의 마법사 테마의 LED·사이니지·홀로그램 기반 팬 전용 콘텐츠를 활용해, 세피아와 에메랄드 두 가지 비주얼 테마의 디지털 공간을 구현.",
+              "Sphere Entertainment 공연팀과 지속적으로 협업하며 오즈의 왕좌 디자인 등 현장 실물 디자인 작업에 참여 및 공연 비주얼 시뮬레이션."
+            ]
+          } } ,},
       { video: "spwz-video-01.mp4", src: "sspwz-video-01-poster.jpg", caption: "" },
       { video: "spwz-video-02.mp4", src: "sspwz-video-02-poster.jpg", caption: "" },
       { text:
         { en: "After optimizing the Sphere\u2019s interior, we were left with its integral framework, allowing us to dive into the artistic tasks alongside other artists from Magnopus and Sphere Entertainment. We anchored the experience around two distinct visual moments from the movie: the prevailing sepia tones representing Kansas at the beginning, and the vibrant emerald tones of the Emerald City later on. Through numerous iterations, the optimized space gained color and was prepared for additional visual, architectural, and even pyrotechnic tests.", 
-          ko: "Result: 스튜디오·현장·클라이언트 팀이 물리적 위치에 관계없이 동일한 디지털 공간에서 실시간 시뮬레이션·피드백 공유가 가능해져, 사이니지 영상 및 공연 특수효과의 품질 사전 검증 가능. 2025년 8월 28일 공연 성공적 개막, 약 두 달 만에 티켓 100만 장 판매·수익 1억 3천만 달러 이상 달성. cross-reality 기반 대규모 몰입형 엔터테인먼트 제작에서 아트·기술 균형을 고려한 공간 디자인 역량과 실시간 협업 워크플로우 구축 능력 입증." } ,},
+          ko: {
+            title: "Result",
+            items: [
+              "스튜디오·현장·클라이언트 팀이 물리적 위치에 관계없이 동일한 디지털 공간에서 실시간 시뮬레이션·피드백 공유가 가능해져, 사이니지 영상 및 공연 특수효과의 품질 사전 검증 가능.",
+              "2025년 8월 28일 공연 성공적 개막, 약 두 달 만에 티켓 100만 장 판매·수익 1억 3천만 달러 이상 달성.",
+              "cross-reality 기반 대규모 몰입형 엔터테인먼트 제작에서 아트·기술 균형을 고려한 공간 디자인 역량과 실시간 협업 워크플로우 구축 능력 입증."
+            ]
+          } } ,},
       { video: "spwz_testvid_01.mp4", src: "spwz_testvid_01-poster.jpg", caption: "", narrow: true },
-      { text: [
-        { en: "Building a digital-twin space of the Sphere in a cross-reality platform eliminated the distance between the actual venue, the studio, and all involved teams, regardless of their physical location. This was made possible entirely by the platform\u2019s real-time interoperability, which allowed simulations to be conducted and shared with anyone, whether they were using a PC, Mac, mobile phone, or VR headset. To fully harness this magical technology, the 3D art team was essential in logically and artistically optimizing the data to minimize potential bottlenecks while connecting teams. Beyond technical optimization, we meticulously conveyed the design, feel, and mood of The Wizard of Oz, ensuring its original theme blended seamlessly into the digital space, and ultimately, the physical venue. The Wizard of Oz at Sphere was a mind-boggling project in terms of both technology and art, and at this intersection, Magnopus\u2019 solutions team and 3D artists pioneered one of the most advanced methods in creating an immersive experience.", 
-          ko: "협업을 통한 문제 해결 사례: 6GB 규모의 BIM 데이터를 실시간 협업이 가능한 cross-platform에 최적화하는 동시에, 영화 〈The Wizard of Oz〉의 세계관을 디지털 공간으로 재해석하는 것이 핵심 과제였다. BIM의 메타데이터 정리 이후에도 과도하게 남은 3D geometry 데이터를 팀과 함께 단계적으로 경량화하고 반복적인 런타임 테스트를 수행했다. 이를 통해 웹·모바일·VR 등 모든 지원 디바이스에서 안정적으로 구동되는 디지털 트윈 환경을 구축했고, 스튜디오·현장·클라이언트 팀 모두가 실시간 협업이 가능했다. 또한, 공연 공간 디자인과 연계해 Sphere Entertainment 공연팀과 협업하며, 오즈의 왕좌, 사이니지 영상, 파이로테크닉 연출의 완성도를 높였다." }
-      ] },
+      { text: {
+          en: "Building a digital-twin space of the Sphere in a cross-reality platform eliminated the distance between the actual venue, the studio, and all involved teams, regardless of their physical location. This was made possible entirely by the platform\u2019s real-time interoperability, which allowed simulations to be conducted and shared with anyone, whether they were using a PC, Mac, mobile phone, or VR headset. To fully harness this magical technology, the 3D art team was essential in logically and artistically optimizing the data to minimize potential bottlenecks while connecting teams. Beyond technical optimization, we meticulously conveyed the design, feel, and mood of The Wizard of Oz, ensuring its original theme blended seamlessly into the digital space, and ultimately, the physical venue. The Wizard of Oz at Sphere was a mind-boggling project in terms of both technology and art, and at this intersection, Magnopus\u2019 solutions team and 3D artists pioneered one of the most advanced methods in creating an immersive experience.",
+          ko: {
+            title: "협업을 통한 문제 해결 사례",
+            items: [
+              "6GB 규모의 BIM 데이터를 실시간 협업이 가능한 cross-platform에 최적화하는 동시에, 영화 〈The Wizard of Oz〉의 세계관을 디지털 공간으로 재해석하는 것이 핵심 과제였다.",
+              "BIM의 메타데이터 정리 이후에도 과도하게 남은 3D geometry 데이터를 팀과 함께 단계적으로 경량화하고 반복적인 런타임 테스트를 수행했다.",
+              "이를 통해 웹·모바일·VR 등 모든 지원 디바이스에서 안정적으로 구동되는 디지털 트윈 환경을 구축했고, 스튜디오·현장·클라이언트 팀 모두가 실시간 협업이 가능했다.",
+              "또한, 공연 공간 디자인과 연계해 Sphere Entertainment 공연팀과 협업하며, 오즈의 왕좌, 사이니지 영상, 파이로테크닉 연출의 완성도를 높였다."
+            ]
+          } }
+      },
     ]
   },
   {
