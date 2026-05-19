@@ -604,7 +604,7 @@ html[lang="en"] .gallery-text p:first-child::first-letter {
   font-size: clamp(20px, 1.8vw, 26px);
   line-height: 1.5;
   color: var(--text);
-  max-width: 56ch;
+  max-width: 70ch;
   padding-top: clamp(40px, 5vw, 64px);
   padding-bottom: clamp(40px, 5vw, 64px);
   position: relative;
@@ -631,7 +631,7 @@ html[lang="en"] .gallery-text p:first-child::first-letter {
   margin-right: -0.12em;
 }
 /* Disable drop-cap inside summary so it doesn't fight the quote marks */
-.gallery-text.summary p:first-child::first-letter {
+  .gallery-text.summary p:first-child::first-letter {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -1021,12 +1021,13 @@ html[lang="ko"] .project-specs span {
   margin: 0;
   display: inline-block; /* shrink-wrap so it stays centred in the block */
   text-align: left;      /* items read left-to-right even though the block is centred */
+  word-break: keep-all; /* prevent awkward breaks in Korean syllable blocks */
 }
  
 /* Individual bullet item */
 .ko-bullet-items li {
   position: relative;
-  padding-left: 1.4em;
+  padding-left: 1.2em;
   margin-bottom: 0.7em;
   font-family: var(--font-display-ko);
   font-weight: 400;
@@ -1038,9 +1039,10 @@ html[lang="ko"] .project-specs span {
  
 /* Decorative accent bullet */
 .ko-bullet-items li::before {
-  content: '—';
+  content: '•';
   position: absolute;
   left: 0;
   color: var(--accent);
   font-weight: 300;
+  font-size: 1.2em;
 }

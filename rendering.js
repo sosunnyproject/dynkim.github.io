@@ -43,15 +43,11 @@ function openProject(id) {
   const p = ALL_PROJECTS.find(x => x.id === id);
   if (!p) return;
 
-  // Projects in the secondary row (the one that contains Wizard of Oz —
-  // i.e. everything in PROJECTS_SECONDARY) get the Korean "head word"
-  // emphasis treatment in their gallery text blocks.
   const isSecondaryRow = typeof PROJECTS_SECONDARY !== 'undefined'
     && PROJECTS_SECONDARY.some(x => x.id === id);
 
   document.getElementById('detail-title').textContent = t(p.name);
   document.getElementById('detail-description').textContent = t(p.description);
-  // Resolve tags through the i18n helper. Empty arrays / missing field skip the row.
   const resolvedTags = t(p.tags);
   const tagsString = Array.isArray(resolvedTags) ? resolvedTags.join(' · ') : (resolvedTags || '');
   const tagsRow = tagsString
@@ -69,10 +65,11 @@ function openProject(id) {
 
   const gallery = document.getElementById('gallery');
   gallery.innerHTML = p.images.map(item => {
-      // ── TEXT / SUMMARY BLOCK ──────────────────────────────────────────────
+
+    // ── TEXT / SUMMARY BLOCK ──────────────────────────────────────────────
     if (item.text != null || item.koBullets) {
       const cls = item.summary ? 'gallery-text summary' : 'gallery-text';
- 
+
       // Korean bullet-list override:
       // When currentLang is 'ko' and the item carries a koBullets definition,
       // render a centred title line followed by centred bullet points instead
@@ -87,7 +84,7 @@ function openProject(id) {
           <ul class="ko-bullet-items">${bulletItems}</ul>
         </div>`;
       }
- 
+
       // Default text rendering path (English or Korean without koBullets)
       const resolved = t(item.text);
       const paras = Array.isArray(resolved) ? resolved : [resolved];
@@ -100,6 +97,7 @@ function openProject(id) {
       };
       return `<div class="${cls}">${paras.map(para => `<p>${emphasizeHead(para)}</p>`).join('')}</div>`;
     }
+
     if (item.link) {
       const safeUrl = item.link.replace(/"/g, '&quot;');
       const label = t(item.label) || (item.poster ? ui('embedDefault') : ui('ctaDefault'));
@@ -122,6 +120,7 @@ function openProject(id) {
       }
       return `<div class="gallery-cta"><a href="${safeUrl}" target="_blank" rel="noopener noreferrer">${label} <span class="arrow">→</span></a></div>`;
     }
+
     const renderMediaItem = m => {
       const caption = t(m.caption);
       const media = m.video
@@ -130,19 +129,16 @@ function openProject(id) {
       const cls = m.narrow ? 'gallery-item narrow' : 'gallery-item';
       return `<div class="${cls}">${media}<div class="caption">${caption || ''}</div></div>`;
     };
-    // Side-by-side pair — two media items rendered with zero gap
+
     if (item.pair) {
       return `<div class="gallery-pair">${item.pair.map(renderMediaItem).join('')}</div>`;
     }
-    // Single image or video
     return renderMediaItem(item);
   }).join('');
 
-  // Switch views
   document.getElementById('view-home').classList.remove('active');
   document.getElementById('view-project').classList.add('active');
   window.scrollTo({ top: 0, behavior: 'instant' });
 
-  // URL hash for shareable links & back-button support
   history.pushState({ view: 'project', id }, '', `#${id}`);
 }
